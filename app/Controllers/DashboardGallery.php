@@ -175,8 +175,8 @@ class DashboardGallery extends BaseController
             ]
         ]))
         {
-            $validation = \Config\Services::validation();
-            return redirect()->to('/dashboardgallery/edit/' . $this->request->getVar('slug'))->withInput()->with('validation', $validation);
+       
+            return redirect()->to('/dashboardgallery/edit/' . $this->request->getVar('slug'))->withInput();
         }
         $fileUpload = $this->request->getFile('name');
         if($fileUpload->getError() == 4)
