@@ -32,6 +32,11 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+$routes->get('/dashboardgallery', 'DashboardGallery::index');
+$routes->get('/dashboardgallery/create', 'DashboardGallery::create');
+$routes->get('/dashboardgallery/edit/(:segment)', 'DashboardGallery::edit/$1');
+$routes->delete('/dashboardgallery/(:num)', 'DashboardGallery::delete/$1');
+$routes->get('/dashboardgallery/(:any)', 'DashboardGallery::detail/$1');
 
 /*
  * --------------------------------------------------------------------

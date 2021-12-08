@@ -1,0 +1,101 @@
+.lhtboxed{
+    position: relative;
+    width:100%;
+    height:200px;
+}
+.lhtboxed span{
+    width:100%;
+    height:200px;
+    background-color: rgba(200, 200, 200, .5);
+    position: absolute;
+    top:0;
+    display: block;
+    text-align: center;
+    line-height: 200px;
+    color:black;
+    text-shadow: 1px 1px 1px #fff;
+    opacity:0;
+    transition: 0.3s;
+    transform: scale(0) rotate(0);
+}
+.lhtboxed a:hover span{
+    opacity:1;
+    transform: scale(1) rotate(360deg);
+}
+.overlaping{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 9999;
+    transition: .5s;
+    text-align:center;
+    padding:100px 0;
+}
+.overlaping:target{
+    width:auto;
+    height:auto;
+    bottom: 0;
+    right:0;
+    background-color: rgba(0, 0, 0, .8);
+}
+.overlaping img{
+    max-height:100%;
+    max-width: 100%;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, .5);
+}
+.overlaping:target img{
+    animation: zoomAndFade 1s;
+}
+@keyframes zoomAndFade {
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.closeLight{
+    position:absolute;
+    top:50px;
+    left:50%;
+    margin-left: -20px;
+    color:white;
+    background-color: black;
+    padding:5px;   
+    opacity: 0;
+}
+.overlaping:target .closeLight{
+    animation: slideDownFade .5s .5s forwards;
+}
+@keyframes slideDownFade {
+    0%{
+        opacity:0;
+        margin-top: -20px;
+    }
+    100%{
+        opacity: 1;
+        margin-top: 0;
+    }
+    
+}
+.sabuga{
+    font-size:40px;
+    opacity: 0;
+}
+.overlaping:target .sabuga{
+    animation: fadeSabuga .5s .5s forwards;
+}
+@keyframes fadeSabuga{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}

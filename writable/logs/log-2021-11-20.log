@@ -1,0 +1,408 @@
+ERROR - 2021-11-20 10:25:04 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known. 
+CRITICAL - 2021-11-20 10:50:47 --> Call to undefined function form_open()
+#0 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include()
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('register/index', Array, true)
+#3 D:\xampp\htdocs\root-test\app\Controllers\Register.php(11): view('register/index')
+#4 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->index()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-20 11:44:25 --> Undefined variable $validation
+#0 D:\xampp\htdocs\root-test\app\Views\register\index.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 34)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('register/index', Array, true)
+#4 D:\xampp\htdocs\root-test\app\Controllers\Register.php(31): view('register/index', Array)
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->index()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-20 11:44:38 --> Undefined variable $validation
+#0 D:\xampp\htdocs\root-test\app\Views\register\index.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 32)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('register/index', Array, true)
+#4 D:\xampp\htdocs\root-test\app\Controllers\Register.php(31): view('register/index', Array)
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->index()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-20 11:44:40 --> Undefined variable $validation
+#0 D:\xampp\htdocs\root-test\app\Views\register\index.php(32): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 32)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('register/index', Array, true)
+#4 D:\xampp\htdocs\root-test\app\Controllers\Register.php(31): view('register/index', Array)
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->index()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-20 13:07:37 --> Undefined variable $page_session
+#0 D:\xampp\htdocs\root-test\app\Views\register\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 26)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('register/index', Array, true)
+#4 D:\xampp\htdocs\root-test\app\Controllers\Register.php(83): view('register/index', Array)
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->index()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-20 13:07:38 --> Undefined variable $page_session
+#0 D:\xampp\htdocs\root-test\app\Views\register\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 26)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('register/index', Array, true)
+#4 D:\xampp\htdocs\root-test\app\Controllers\Register.php(83): view('register/index', Array)
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->index()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-20 13:07:53 --> Undefined variable $page_session
+#0 D:\xampp\htdocs\root-test\app\Views\register\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 26)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('register/index', Array, true)
+#4 D:\xampp\htdocs\root-test\app\Controllers\Register.php(83): view('register/index', Array)
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->index()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-20 13:08:06 --> Undefined variable $page_session
+#0 D:\xampp\htdocs\root-test\app\Views\register\index.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 26)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('register/index', Array, true)
+#4 D:\xampp\htdocs\root-test\app\Controllers\Register.php(83): view('register/index', Array)
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->index()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-20 14:11:07 --> Call to undefined function App\Controllers\now()
+#0 D:\xampp\htdocs\root-test\app\Controllers\Register.php(93): App\Controllers\Register->verifyExpiryTime('2021-11-20 01:5...')
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->activate('4752b7b7e45f921...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 14:12:04 --> A non-numeric value encountered
+#0 D:\xampp\htdocs\root-test\app\Controllers\Register.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'D:\\xampp\\htdocs...', 118)
+#1 D:\xampp\htdocs\root-test\app\Controllers\Register.php(94): App\Controllers\Register->verifyExpiryTime('2021-11-20 01:5...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->activate('4752b7b7e45f921...')
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#4 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-11-20 14:13:34 --> A non-numeric value encountered
+#0 D:\xampp\htdocs\root-test\app\Controllers\Register.php(118): CodeIgniter\Debug\Exceptions->errorHandler(2, 'A non-numeric v...', 'D:\\xampp\\htdocs...', 118)
+#1 D:\xampp\htdocs\root-test\app\Controllers\Register.php(94): App\Controllers\Register->verifyExpiryTime('2021-11-20 01:5...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Register->activate('4752b7b7e45f921...')
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Register))
+#4 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+ERROR - 2021-11-20 15:18:51 --> Unknown column 'émail' in 'where clause'
+CRITICAL - 2021-11-20 15:18:51 --> Unknown column 'émail' in 'where clause'
+#0 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `uniid`,...', 0)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `uniid`,...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `uniid`,...')
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT `uniid`,...', Array, false)
+#4 D:\xampp\htdocs\root-test\app\Models\LoginModel.php(14): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\root-test\app\Controllers\Login.php(32): App\Models\LoginModel->verifyEmail('wakfmka@gmail.c...')
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#8 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-11-20 15:26:58 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 15:29:51 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 15:29:57 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 15:34:25 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 15:43:50 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 15:46:32 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 15:46:43 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 15:47:48 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 15:50:27 --> Undefined array key "pass"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 15:50:45 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 15:56:22 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:02:58 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:09:59 --> Undefined array key 3
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:11:46 --> Undefined array key 3
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:12:09 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:14:59 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:22:35 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:24:34 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:27:08 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:33:12 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 35)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:41:20 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 36)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:51:13 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 36)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:51:33 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 36)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 16:53:38 --> Undefined array key "password"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(36): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 36)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 17:03:59 --> Undefined array key "uniid"
+#0 D:\xampp\htdocs\root-test\app\Controllers\Login.php(40): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 40)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Login->index()
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Login))
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-11-20 17:12:36 --> Invalid file: dashboard/layours.php
+#0 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(198): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('dashboard/layou...')
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(230): CodeIgniter\View\View->render('dashboard/layou...', Array, true)
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#3 D:\xampp\htdocs\root-test\app\Controllers\Dashboard.php(11): view('dashboard/index')
+#4 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+CRITICAL - 2021-11-20 17:54:15 --> You must set the database table to be used with your query.
+#0 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Model.php(545): CodeIgniter\Database\BaseConnection->table(NULL)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Model.php(717): CodeIgniter\Model->builder()
+#2 D:\xampp\htdocs\root-test\app\Models\DashboardModel.php(11): CodeIgniter\Model->__call('table', Array)
+#3 D:\xampp\htdocs\root-test\app\Controllers\Dashboard.php(21): App\Models\DashboardModel->getLoggedInUserData('dd55bcdee64716a...')
+#4 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#8 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#9 {main}
+ERROR - 2021-11-20 18:29:04 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:30:35 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:32:43 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:34:51 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:36:06 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:38:40 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:43:00 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:43:39 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:45:57 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:47:53 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:50:22 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:51:24 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+ERROR - 2021-11-20 18:52:23 --> Incorrect table definition; there can be only one auto column and it must be defined as a key
+CRITICAL - 2021-11-20 19:20:44 --> Attempt to read property "profil_pic" on bool
+#0 D:\xampp\htdocs\root-test\app\Views\dashboard\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'D:\\xampp\\htdocs...', 9)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#4 D:\xampp\htdocs\root-test\app\Controllers\Dashboard.php(22): view('dashboard/index', Array)
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-20 19:20:45 --> Attempt to read property "profil_pic" on bool
+#0 D:\xampp\htdocs\root-test\app\Views\dashboard\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'D:\\xampp\\htdocs...', 9)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#4 D:\xampp\htdocs\root-test\app\Controllers\Dashboard.php(22): view('dashboard/index', Array)
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-11-20 19:20:50 --> Attempt to read property "profil_pic" on bool
+#0 D:\xampp\htdocs\root-test\app\Views\dashboard\index.php(9): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read...', 'D:\\xampp\\htdocs...', 9)
+#1 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/index', Array, true)
+#4 D:\xampp\htdocs\root-test\app\Controllers\Dashboard.php(22): view('dashboard/index', Array)
+#5 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboard->index()
+#6 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\root-test\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\root-test\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-11-20 19:21:12 --> Email: sendWithSmtp throwed fsockopen(): php_network_getaddresses: getaddrinfo failed: No such host is known. 

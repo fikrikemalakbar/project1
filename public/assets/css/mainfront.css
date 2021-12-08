@@ -1,0 +1,602 @@
+* {
+    scroll-behavior: smooth;
+
+}
+
+/* st floorpl */
+
+.image-row > .image-column {
+    padding: 0 8px;
+  }
+  
+  .image-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .image-column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* The Modal (background) */
+  .image-modal {
+    display: none;
+    /* width: 0;
+    height: 0; */
+    width:auto;
+    height:auto;
+    overflow: hidden;
+    position:fixed;
+    margin: auto;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 9999;
+    transition: .5s;
+    text-align:center;
+    padding:100px 0;
+    bottom: 0;
+    right:0;
+  }
+  
+ 
+  .image-modal img{
+      max-width: 100%;
+      max-height: 100%;
+  }
+  
+  /* The Close Button */
+  .image-close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .image-close:hover,
+  .image-close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .image-mySlides {
+    display: none;
+  }
+  
+  .image-cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .image-prev,
+  .image-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    /* padding: 16px; */
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .image-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .image-prev{
+    left:0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .image-prev:hover,
+  .image-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .image-numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  .image-caption-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .image-demo {
+    opacity: 0.6;
+  }
+  
+  .image-active,
+  .image-demo:hover {
+    opacity: 1;
+  }
+  
+  img.image-hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .image-hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/* en floorpl */
+
+/* st third */
+
+.third-row > .third-column {
+    padding: 0 8px;
+  }
+  
+  .third-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  .third-column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* The Modal (background) */
+  .third-modal {
+    display: none;
+    /* width: 0;
+    height: 0; */
+    width:auto;
+    height:auto;
+    overflow: hidden;
+    position:fixed;
+    margin: auto;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 9999;
+    transition: .5s;
+    text-align:center;
+    padding:100px 0;
+    bottom: 0;
+    right:0;
+  }
+  
+ 
+  .third-modal img{
+      max-width: 100%;
+      max-height: 100%;
+  }
+  
+  /* The Close Button */
+  .third-close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .third-close:hover,
+  .third-close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .third-mySlides {
+    display: none;
+  }
+  
+  .third-cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .third-prev,
+  .third-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    /* padding: 16px; */
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .third-next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .third-prev{
+    left:0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .third-prev:hover,
+  .third-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .third-numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  
+  .third-caption-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .third-demo {
+    opacity: 0.6;
+  }
+  
+  .third-active,
+  .third-demo:hover {
+    opacity: 1;
+  }
+  
+  img.third-hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .third-hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/* en third */
+
+/* st glr */
+
+.gallery-row > .gallery-column {
+  padding: 0 8px;
+}
+
+.gallery-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.gallery-column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.gallery-modal {
+  display: none;
+  /* width: 0;
+  height: 0; */
+  width:auto;
+  height:auto;
+  overflow: hidden;
+  position:fixed;
+  margin: auto;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, .8);
+  z-index: 9999;
+  transition: .5s;
+  text-align:center;
+  padding:100px 0;
+  bottom: 0;
+  right:0;
+}
+
+
+.gallery-modal img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* The Close Button */
+.gallery-close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.gallery-close:hover,
+.gallery-close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.gallery-mySlides {
+  display: none;
+}
+
+.gallery-cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.gallery-prev,
+.gallery-next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  /* padding: 16px; */
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.gallery-next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.gallery-prev{
+  left:0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.gallery-prev:hover,
+.gallery-next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.gallery-numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.gallery-caption-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, .8);
+  padding: 2px 16px;
+  color: white;
+}
+
+.gallery-demo {
+  opacity: 0.6;
+}
+
+.gallery-active,
+.gallery-demo:hover {
+  opacity: 1;
+}
+
+img.gallery-hover-shadow {
+  transition: 0.3s;
+}
+
+.gallery-hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* en glr */
+
+
+.parallax {
+    opacity: 0.6;
+    transition-delay:0s, 0s, 0s;
+    transition-duration:0.3s, 0.3s, 0.3s ;
+    background-attachment: fixed;
+    
+}
+.parallax-container {
+    /* height: 100vh; */
+    height:100%;
+    background-attachment: fixed;
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    color: #4054B2;
+}
+
+.section {
+    /* position: absolute;
+    top:81%; */
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    color: #F8CD96;
+}
+
+.section a {
+    color: black;
+}
+
+main {
+    margin-top: 20px;
+
+}
+
+.whyChoice {
+    background-color: rgb(238, 234, 234);
+}
+
+.titleWC {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.featureMobile {
+    display: none;
+}
+
+.featureTitle {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.featureDesktop {
+    display: block;
+}
+
+.featureText {
+    font-weight: 400;
+    font-size: 15px;
+}
+img .imageFloor{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* .filter {
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px); 
+    -webkit-backdrop-filter: contrast(100%);
+    backdrop-filter: contrast(100%);
+    background-color: rgba(21, 3, 49, 0.5);
+    height: 600px;
+} */
+.floorplanMain {
+    
+    background-color:  rgba(21, 3, 49, 0.5);
+    /* height:100vh; */
+    height:60%;
+}
+.floorBuai{
+    padding-top: 50px;
+}
+.floorplanHeader {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+}
+
+.floorplanHTitle {
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+}
+.floorplanHText{
+    font-size:18px;
+    font-weight:400;
+    color:white;
+}
+.floorplanHType{
+    color:#F8CD96;
+    font-size:23px;
+    font-weight:700;
+}
+.floorDetail{
+    color:#F8CD96;
+    font-size:23px;
+    font-weight:700;
+}
+.floorUDText{
+    font-size:18px;
+    font-weight:400;
+    color:white;
+}
+
+
+.thirdTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-weight: 700;
+    font-size: 23px;
+    color:#4054B2;
+}
+
+.galleryMain{
+    background-color:  rgba(21, 3, 49, 0.5);
+    /* height:100vh; */
+    height:60%;
+}
+.galleryBuai{
+    padding-top:50px;
+}
+.galleryHeader{
+    display:flex;
+    justify-content: center;
+}
+.galleryTitle{
+    color:white;
+    font-size:23px;
+    font-weight:700;
+}
+iframe{
+  max-width:100%;
+}
+.hubungiTitlw{
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .featureDesktop {
+        display: none;
+    }
+
+    .featureMobile {
+        display: block;
+    }
+
+    .featureTitle {
+        display: flex;
+        justify-content: center;
+    }
+    .overlaping{
+        padding-right:30px;
+        padding-left:30px;
+    }
+    .gallery-column{
+      width:50%;
+    }
+}
