@@ -158,21 +158,21 @@ class DashboardGallery extends BaseController
             $rule_alt = 'required|is_unique[gallery.alt]';
         }
         if(!$this->validate([
-            'name' => [
-                'rules'=>'max_size[name,1024]|is_image[name]|mime_in[name,image/jpg,image/jpeg,image/png]',
-                'errors'=>[
-                    'max_size' => 'Ukuran Gambar terlalu besar , maximal 1024kb atau 1 mb',
-                    'is_image' => 'ini bukan gambar,,harus extension PNG , JPG dan JPEG',
-                    'mime_in'=> 'ini bukan gambar,harus extension PNG , JPG dan JPEG'
-                ]
-            ],
             'alt'=>[
                 'rules'=>$rule_alt,
                 'errors'=>[
                     'required'=> 'Caption harus di isi , tidak boleh kosong',
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'
                 ]
-            ]
+                ],
+                'name' => [
+                    'rules'=>'max_size[name,1024]|is_image[name]|mime_in[name,image/jpg,image/jpeg,image/png]',
+                    'errors'=>[
+                        'max_size' => 'Ukuran Gambar terlalu besar , maximal 1024kb atau 1 mb',
+                        'is_image' => 'ini bukan gambar,,harus extension PNG , JPG dan JPEG',
+                        'mime_in'=> 'ini bukan gambar,harus extension PNG , JPG dan JPEG'
+                    ]
+                ]
         ]))
         {
        
@@ -181,11 +181,11 @@ class DashboardGallery extends BaseController
         $fileUpload = $this->request->getFile('name');
         if($fileUpload->getError() == 4)
         {
-            $nameUpload = $this->request->getVar('oldname');
+            $nameUpload = $this->request->getVar('sampulLama');
         }else{
             $nameUpload = $fileUpload->getRandomName();
             $fileUpload->move('assets/img/upload', $nameUpload);
-            unlink('assets/img/upload/' . $this->request->getVar('oldName'));
+            unlink('assets/img/upload/' . $this->request->getVar('sampulLama'));
         }
         $slug = url_title($this->request->getVar('alt'), '-', true);
        $this->galleryModel->save([

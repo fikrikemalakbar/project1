@@ -8,7 +8,7 @@
                 <form action="/dashboardgallery/update/<?=$gallery['id'];?>" method="post" enctype="multipart/form-data">
                     <?=csrf_field();?>
                     <input type="hidden" name="slug" value="<?=$gallery['slug'];?>">
-                    <input type="hidden" name="oldName" value="<?=$gallery['name'];?>">
+                    <input type="hidden" name="sampulLama" value="<?=$gallery['name'];?>">
                     <div class="row mb-3">
                         <label for="name" class="col-sm-2 col-form-label">Name</label>
                         <div class="col-sm-10">
@@ -20,7 +20,7 @@
                                 <div class="custom-file">
                                     <input type="file"
                                         class="form-control <?=($validation->hasError('name')) ? 'is-invalid' : '';?>"
-                                        id="nameGallery" name="name" onchange="galleryImgPreview()">
+                                        id="name" name="name" onchange="galleryImgPreview()">
                                     <div class="ivalid-feedback">
                                         <?=$validation->getError('name');?>
                                     </div>

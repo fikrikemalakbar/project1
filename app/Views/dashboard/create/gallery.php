@@ -18,7 +18,7 @@
                                 <div class="custom-file">
                                     <input type="file"
                                         class="form-control <?=($validation->hasError('name')) ? 'is-invalid' : '';?>"
-                                        id="nameGallery" name="name" onchange="galleryImgPreview()">
+                                        id="name" name="name" onchange="galleryImgPreview()">
                                     <div class="ivalid-feedback">
                                         <?=$validation->getError('name');?>
                                     </div>

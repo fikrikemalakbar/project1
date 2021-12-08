@@ -117,7 +117,7 @@
   <script src="<?=base_url()?>/assets/bootstrap-5.1.3-examples/dashboard/dashboard.js"></script>
   <script>
     function galleryImgPreview() {
-      const nameGallery = document.querySelector('#nameGallery');
+      const nameGallery = document.querySelector('#name');
       const namaGalleryLabel = document.querySelector('.custom-file-label');
       const imgGalleryPreview = document.querySelector('.gallery-preview');
       namaGalleryLabel.textContent = nameGallery.files[0].name;
