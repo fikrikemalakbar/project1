@@ -189,6 +189,39 @@
       imgChildduaAPreview.src = e.target.result;
       }
     }
+    function heroImgBPreview() {
+      const herobimage = document.querySelector('#heroimagetypeb');
+      const namalabelherob = document.querySelector('.custom-file-label');
+      const imgherobpreview = document.querySelector('.hero-typeb-preview');
+      namalabelherob.textContent = herobimage.files[0].name;
+      const fileherobimage = new FileReader();
+      fileherobimage.readAsDataURL(herobimage.files[0]);
+      fileherobimage.onload = function (e) {
+        imgherobpreview.src = e.target.result;
+      }
+    }
+    function childImgSatuBPreview() {
+      const childbimagesatu = document.querySelector('#childimagesatutypeb');
+      const namachildbsatulabel = document.querySelector('.custom-file-label');
+      const imgchildsatupreview = document.querySelector('.childsatu-typeb-preview');
+      namachildbsatulabel.textContent = childbimagesatu.files[0].name;
+      const filechildbimagesatu = new FileReader();
+     filechildbimagesatu.readAsDataURL(childbimagesatu.files[0]);
+     filechildbimagesatu.onload = function (e) {
+      imgchildsatupreview.src = e.target.result;
+      }
+    }
+    function childImgDuaBPreview() {
+      const childduaimageb = document.querySelector('#childimageduatypeb');
+      const namachildduablabel = document.querySelector('.custom-file-label');
+      const imgchildduab = document.querySelector('.childdua-typeb-preview');
+     namachildduablabel.textContent = childduaimageb.files[0].name;
+      const filechildduaimageb = new FileReader();
+     filechildduaimageb.readAsDataURL(childduaimageb.files[0]);
+     filechildduaimageb.onload = function (e) {
+      imgchildduab.src = e.target.result;
+      }
+    }
   </script>
 </body>
 

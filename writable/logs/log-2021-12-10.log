@@ -1,0 +1,48 @@
+CRITICAL - 2021-12-10 08:52:05 --> Undefined variable $typea
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\detail\typeb.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 31)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/detai...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypeb.php(43): view('dashboard/detai...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypeb->detail('hero-satu')
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypeb))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-10 08:52:38 --> Undefined variable $typea
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\detail\typeb.php(42): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 42)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/detai...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypeb.php(43): view('dashboard/detai...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypeb->detail('hero-satu')
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypeb))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-10 08:53:11 --> Undefined property: App\Controllers\Dashboardtypeb::$typeaModel
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypeb.php(202): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 202)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypeb->edit('hero-satu')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypeb))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-10 09:10:23 --> Call to undefined method App\Models\Typeb::getTypea
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypeb.php(214): CodeIgniter\Model->__call('getTypea', Array)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypeb->update('2')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypeb))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-10 09:12:26 --> Call to undefined method App\Models\Typeb::getTypea
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypeb.php(214): CodeIgniter\Model->__call('getTypea', Array)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypeb->update('2')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypeb))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}

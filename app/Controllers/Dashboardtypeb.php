@@ -1,14 +1,14 @@
 <?php
 
 namespace App\Controllers;
-use App\Models\Typea;
+use App\Models\Typeb;
 use App\Controllers\BaseController;
 
-class Dashboardtypea extends BaseController
+class Dashboardtypeb extends BaseController
 {
     public function __construct()
     {
-        $this->typeaModel = new typea();
+        $this->typebModel = new typeb();
     }
     public function index()
     {
@@ -17,12 +17,12 @@ class Dashboardtypea extends BaseController
             return redirect()->to(base_url()."/login");
         }    
         $data = [
-            'title'=>'Dashboard Type A',
-            'typea'=>$this->typeaModel->getTypea()
+            'title'=>'Dashboard Type B',
+            'typeb'=>$this->typebModel->getTypeb()
         ];
-        return view('dashboard/typea',$data);
+        return view('dashboard/typeb',$data);
     }
-    public function detail($slugtypea)
+    public function detail($slugtypeb)
     {
         if(!session()->has('logged_user'))
         {
@@ -31,16 +31,16 @@ class Dashboardtypea extends BaseController
 
        
        $data = [
-           'title'=> 'Detail Type A',
-           'typea'=> $this->typeaModel->getTypea($slugtypea)
+           'title'=> 'Detail Type B',
+           'typeb'=> $this->typebModel->getTypeb($slugtypeb)
        ];
 
-       if(empty($data['typea']))
+       if(empty($data['typeb']))
        {
-           throw new \CodeIgniter\Exceptions\PageNotFoundException('nama gambar '   .$slugtypea   . ' tidak di temukan.');
+           throw new \CodeIgniter\Exceptions\PageNotFoundException('nama gambar '   .$slugtypeb   . ' tidak di temukan.');
        }
 
-       return view('dashboard/detail/typea',$data);
+       return view('dashboard/detail/typeb',$data);
     }
     public function create()
     {
@@ -50,11 +50,11 @@ class Dashboardtypea extends BaseController
         }
        
         $data = [
-            'title' => 'form create type a',
+            'title' => 'form create type B',
             'validation'=> \Config\Services::validation()
         ];
 
-        return view('dashboard/create/typea',$data);
+        return view('dashboard/create/typeb',$data);
     }
 
     public function save()
@@ -65,52 +65,52 @@ class Dashboardtypea extends BaseController
         }
        
         if(!$this->validate([
-            'heroimage' => [
-                'rules'=>'max_size[heroimage,2048]|is_image[heroimage]|mime_in[heroimage,image/jpg,image/jpeg,image/png]',
+            'heroimagetypeb' => [
+                'rules'=>'max_size[heroimagetypeb,2048]|is_image[heroimagetypeb]|mime_in[heroimagetypeb,image/jpg,image/jpeg,image/png]',
                 'errors'=>[
                     'max_size' => 'Ukuran Gambar terlalu besar , maximal 2048kb atau 2 mb',
                     'is_image' => 'ini bukan gambar,,harus extension PNG , JPG dan JPEG',
                     'mime_in'=> 'ini bukan gambar,harus extension PNG , JPG dan JPEG'
                 ]
             ],
-            'captionheroimagea'=>[
-                'rules'=>'required|is_unique[typea.captionheroimagea]',
+            'captionheroimageb'=>[
+                'rules'=>'required|is_unique[typeb.captionheroimageb]',
                 'errors'=>[
                     'required'=> 'Caption harus di isi , tidak boleh kosong',
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'
                 ]
             ],
-            'childimagesatu' => [
-                'rules'=>'max_size[childimagesatu,2048]|is_image[childimagesatu]|mime_in[childimagesatu,image/jpg,image/jpeg,image/png]',
+            'childimagesatutypeb' => [
+                'rules'=>'max_size[childimagesatutypeb,2048]|is_image[childimagesatutypeb]|mime_in[childimagesatutypeb,image/jpg,image/jpeg,image/png]',
                 'errors'=>[
                     'max_size' => 'Ukuran Gambar terlalu besar , maximal 2048kb atau 2 mb',
                     'is_image' => 'ini bukan gambar,,harus extension PNG , JPG dan JPEG',
                     'mime_in'=> 'ini bukan gambar,harus extension PNG , JPG dan JPEG'
                 ]
             ],
-            'captionchildimagesatua'=>[
-                'rules'=>'required|is_unique[typea.captionchildimagesatua]',
+            'captionchildsatuimageb'=>[
+                'rules'=>'required|is_unique[typeb.captionchildsatuimageb]',
                 'errors'=>[
                     'required'=> 'Caption harus di isi , tidak boleh kosong',
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'
                 ]
             ],
-            'childimagedua' => [
-                'rules'=>'max_size[childimagedua,2048]|is_image[childimagedua]|mime_in[childimagedua,image/jpg,image/jpeg,image/png]',
+            'childimageduatypeb' => [
+                'rules'=>'max_size[childimageduatypeb,2048]|is_image[childimageduatypeb]|mime_in[childimageduatypeb,image/jpg,image/jpeg,image/png]',
                 'errors'=>[
                     'max_size' => 'Ukuran Gambar terlalu besar , maximal 2048kb atau 2 mb',
                     'is_image' => 'ini bukan gambar,,harus extension PNG , JPG dan JPEG',
                     'mime_in'=> 'ini bukan gambar,harus extension PNG , JPG dan JPEG'
                 ]
             ],
-            'captionchildimageduaa'=>[
-                'rules'=>'required|is_unique[typea.captionchildimageduaa]',
+            'captionchildduaimageb'=>[
+                'rules'=>'required|is_unique[typeb.captionchildduaimageb]',
                 'errors'=>[
                     'required'=> 'Caption harus di isi , tidak boleh kosong',
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'
                 ]
             ],
-            'texttypea'=>[
+            'texttypeb'=>[
                 'rules'=>'required',
                 'errors'=>[
                     'required'=>'wajib di isi'
@@ -118,52 +118,52 @@ class Dashboardtypea extends BaseController
             ]
         ]))
         {
-             return redirect()->to('/dashboardtypea/create')->withInput();
+             return redirect()->to('/dashboardtypeb/create')->withInput();
 
         }
-        $hero = $this->request->getFile('heroimage');
-        if($hero->getError() == 4)
+        $herocreateb = $this->request->getFile('heroimagetypeb');
+        if($herocreateb->getError() == 4)
         {
-            $namahero = 'blank.png';
+            $namaherocreateb = 'blank.png';
         }
         else
         {
-            $namahero = $hero->getRandomName();
-            $hero->move('assets/img/uploadtypea', $namahero);
+            $namaherocreateb = $herocreateb->getRandomName();
+            $herocreateb->move('assets/img/uploadtypeb', $namaherocreateb);
         }
-        $childsatua = $this->request->getFile('childimagesatu');
-        if($childsatua->getError() == 4)
+        $chilsatucreateb = $this->request->getFile('childimagesatutypeb');
+        if($chilsatucreateb->getError() == 4)
         {
-            $namachildsatua = 'blank.png';
+            $namachildsatucreateb = 'blank.png';
         }
         else
         {
-            $namachildsatua = $childsatua->getRandomName();
-            $childsatua->move('assets/img/uploadtypea', $namachildsatua);
+            $namachildsatucreateb = $chilsatucreateb->getRandomName();
+            $chilsatucreateb->move('assets/img/uploadtypeb', $namachildsatucreateb);
         }
-        $childduaa = $this->request->getFile('childimagedua');
-        if($childduaa->getError() == 4)
+        $childduacreateb = $this->request->getFile('childimageduatypeb');
+        if($childduacreateb->getError() == 4)
         {
-            $namachildduaa = 'blank.png';
+            $namachildduacreateb = 'blank.png';
         }
         else
         {
-            $namachildduaa = $childduaa->getRandomName();
-            $childduaa->move('assets/img/uploadtypea', $namachildduaa);
+            $namachildduacreateb = $childduacreateb->getRandomName();
+            $childduacreateb->move('assets/img/uploadtypeb', $namachildduacreateb);
         }
-        $slugtypea = url_title($this->request->getVar('captionheroimagea'), '-', true);
-       $this->typeaModel->save([
-           'heroimage' => $namahero,
-           'captionheroimagea' => $this->request->getVar('captionheroimagea'),
-           'childimagesatu' => $namachildsatua,
-           'captionchildimagesatua' => $this->request->getVar('captionchildimagesatua'),
-           'childimagedua' => $namachildduaa,
-           'captionchildimageduaa' => $this->request->getVar('captionchildimageduaa'),
-           'texttypea' => $this->request->getVar('texttypea'),
-           'slugtypea' => $slugtypea
+        $slugtypeb = url_title($this->request->getVar('captionheroimageb'), '-', true);
+       $this->typebModel->save([
+           'heroimagetypeb' => $namaherocreateb,
+           'captionheroimageb' => $this->request->getVar('captionheroimageb'),
+           'childimagesatutypeb' => $namachildsatucreateb,
+           'captionchildsatuimageb' => $this->request->getVar('captionchildsatuimageb'),
+           'childimageduatypeb' => $namachildduacreateb,
+           'captionchildduaimageb' => $this->request->getVar('captionchildduaimageb'),
+           'texttypeb' => $this->request->getVar('texttypeb'),
+           'slugtypeb' => $slugtypeb
        ]);
        session()->setFlashdata('pesan', 'Data Berhasil di tambahkan');
-       return redirect()->to('/dashboardtypea');
+       return redirect()->to('/dashboardtypeb');
     }
 
     public function delete($id)
@@ -172,37 +172,37 @@ class Dashboardtypea extends BaseController
         {
             return redirect()->to(base_url()."/login");
         }
-        $typea = $this->typeaModel->find($id);
+        $typeb = $this->typebModel->find($id);
 
-        if($typea['heroimage'] != 'blank.png')
+        if($typeb['heroimagetypeb'] != 'blank.png')
         {
-            unlink('assets/img/uploadtypea/' . $typea['heroimage']);
+            unlink('assets/img/uploadtypeb/' . $typeb['heroimagetypeb']);
         }
 
-        if($typea['childimagesatu'] != 'blank.png')
+        if($typeb['childimagesatutypeb'] != 'blank.png')
         {
-            unlink('assets/img/uploadtypea/' . $typea['childimagesatu']);
+            unlink('assets/img/uploadtypeb/' . $typeb['childimagesatutypeb']);
         }
 
-        if($typea['childimagedua'] != 'blank.png')
+        if($typeb['childimageduatypeb'] != 'blank.png')
         {
-            unlink('assets/img/uploadtypea/' . $typea['childimagedua']);
+            unlink('assets/img/uploadtypeb/' . $typeb['childimageduatypeb']);
         }
 
-        $this->typeaModel->delete($id);
+        $this->typebModel->delete($id);
         session()->setFlashdata('pesan', 'Data Berhasil di Hapus');
-        return redirect()->to('/dashboardtypea');
+        return redirect()->to('/dashboardtypeb');
     }
 
-    public function edit($slugtypea)
+    public function edit($slugtypeb)
     {
         $data = [
             'title' => 'form edit Type A',
             'validation'=> \Config\Services::validation(),
-            'typea' => $this->typeaModel->getTypea($slugtypea)
+            'typeb' => $this->typebModel->getTypeb($slugtypeb)
         ];
 
-        return view('dashboard/edit/typea',$data);
+        return view('dashboard/edit/typeb',$data);
     }
     public function update($id)
     {
@@ -211,82 +211,82 @@ class Dashboardtypea extends BaseController
             return redirect()->to(base_url()."/login");
         }
        
-        $oldTypea = $this->typeaModel->getTypea($this->request->getVar('slugtypea'));
-        if($oldTypea['captionheroimagea'] == $this->request->getVar('captionheroimagea'))
+        $oldTypeb = $this->typebModel->getTypeb($this->request->getVar('slugtypeb'));
+        if($oldTypeb['captionheroimageb'] == $this->request->getVar('captionheroimageb'))
         {
-            $rule_captionheroa = 'required';
+            $rule_captionherob = 'required';
         }
         else
         {
-            $rule_captionheroa = 'required|is_unique[typea.captionheroimagea]';
+            $rule_captionherob = 'required|is_unique[typeb.captionheroimageb]';
         }
 
-        // $oldTypeachildimagesatu = $this->typeaModel->getTypea($this->request->getVar('captionchildimagesatua'));
-        if($this->request->getVar('captionchildimagesatua'))
+       
+        if($this->request->getVar('captionchildsatuimageb'))
         {
-            $rule_captionchildimagesatu = 'required';
+            $rule_captionchildsatuimageb = 'required';
         }
         else
         {
-            $rule_captionchildimagesatu = 'required|is_unique[typea.captionimagesatua]';
+            $rule_captionchildsatuimageb = 'required|is_unique[typeb.captionchildsatuimageb]';
         }
 
-        // $oldTypeachildimagedua = $this->typeaModel->getTypea($this->request->getVar('captionchildimageduaa'));
-        if($this->request->getVar('captionchildimageduaa'))
+       
+        if($this->request->getVar('captionchildduaimageb'))
         {
-            $rule_captionchildimagedua = 'required';
+            $rule_captionchildduaimageb = 'required';
         }
         else
         {
-            $rule_captionchildimagedua = 'required|is_unique[typea.captionimageduaa]';
+            $rule_captionchildduaimageb = 'required|is_unique[typeb.captionchildduaimageb]';
         }
         if(!$this->validate([
-            'heroimage' => [
-                'rules'=>'max_size[heroimage,2048]|is_image[heroimage]|mime_in[heroimage,image/jpg,image/jpeg,image/png]',
+            'heroimagetypeb' => [
+                'rules'=>'max_size[heroimagetypeb,2048]|is_image[heroimagetypeb]|mime_in[heroimagetypeb,image/jpg,image/jpeg,image/png]',
                 'errors'=>[
                     'max_size' => 'Ukuran Gambar terlalu besar , maximal 2048kb atau 2 mb',
                     'is_image' => 'ini bukan gambar,,harus extension PNG , JPG dan JPEG',
                     'mime_in'=> 'ini bukan gambar,harus extension PNG , JPG dan JPEG'
                 ]
             ],
-            'captionheroimagea'=>[
-                'rules'=>$rule_captionheroa,
+            'captionheroimageb'=>[
+                'rules'=>$rule_captionherob,
                 'errors'=>[
                     'required'=> 'Caption harus di isi , tidak boleh kosong',
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'
                 ]
             ],
-            'childimagesatu' => [
-                'rules'=>'max_size[childimagesatu,2048]|is_image[childimagesatu]|mime_in[childimagesatu,image/jpg,image/jpeg,image/png]',
+            '	childimagesatutypeb' => [
+                'rules'=>'max_size[	childimagesatutypeb,2048]|is_image[	childimagesatutypeb]|mime_in[	childimagesatutypeb,image/jpg,image/jpeg,image/png]',
                 'errors'=>[
                     'max_size' => 'Ukuran Gambar terlalu besar , maximal 2048kb atau 2 mb',
                     'is_image' => 'ini bukan gambar,,harus extension PNG , JPG dan JPEG',
                     'mime_in'=> 'ini bukan gambar,harus extension PNG , JPG dan JPEG'
                 ]
             ],
-            'captionchildimagesatua'=>[
-                'rules'=>$rule_captionchildimagesatu,
+            'captionchildsatuimageb'=>[
+                'rules'=>$rule_captionchildsatuimageb,
                 'errors'=>[
                     'required'=> 'Caption harus di isi , tidak boleh kosong',
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'
                 ]
             ],
-            'childimagedua' => [
-                'rules'=>'max_size[childimagedua,2048]|is_image[childimagedua]|mime_in[childimagedua,image/jpg,image/jpeg,image/png]',
+            'childimageduatypeb' => [
+                'rules'=>'max_size[childimageduatypeb,2048]|is_image[childimageduatypeb]|mime_in[childimageduatypeb,image/jpg,image/jpeg,image/png]',
                 'errors'=>[
                     'max_size' => 'Ukuran Gambar terlalu besar , maximal 2048kb atau 2 mb',
                     'is_image' => 'ini bukan gambar,,harus extension PNG , JPG dan JPEG',
                     'mime_in'=> 'ini bukan gambar,harus extension PNG , JPG dan JPEG'
                 ]
             ],
-            'captionchildimageduaa'=>[
-                'rules'=>$rule_captionchildimagedua,
+            'captionchildduaimageb'=>[
+                'rules'=> $rule_captionchildduaimageb,
                 'errors'=>[
                     'required'=> 'Caption harus di isi , tidak boleh kosong',
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'
                 ]
             ],
-            'texttypea'=>[
+            'texttypeB'=>[
                 'rules'=>'required',
                 'errors'=>[
                     'required'=>'wajib di isi'
@@ -295,50 +295,50 @@ class Dashboardtypea extends BaseController
         ]))
         {
        
-            return redirect()->to('/dashboardtypea/edit/' . $this->request->getVar('slugtypea'))->withInput();
+            return redirect()->to('/dashboardtypeb/edit/' . $this->request->getVar('slugtypeb'))->withInput();
         }
-        $herofileupload = $this->request->getFile('heroimage');
-        if($herofileupload->getError() == 4)
+        $heroimageb = $this->request->getFile('heroimagetypeb');
+        if($heroimageb->getError() == 4)
         {
-            $nameheroimage = $this->request->getVar('heroimagelama');
+           $nameheroimageb = $this->request->getVar('hlm');
         }else{
-            $nameheroimage = $herofileupload->getRandomName();
-            $herofileupload->move('assets/img/uploadtypea', $nameheroimage);
-            unlink('assets/img/uploadtypea/' . $this->request->getVar('heroimagelama'));
+           $nameheroimageb = $heroimageb->getRandomName();
+            $heroimageb->move('assets/img/uploadtypeb',$nameheroimageb);
+            unlink('assets/img/uploadtypeb/' . $this->request->getVar('hlm'));
         }
 
-        $childimagesatu = $this->request->getFile('childimagesatu');
-        if($childimagesatu->getError() == 4)
+        $childimagesatub = $this->request->getFile('childimagesatutypeb');
+        if($childimagesatub->getError() == 4)
         {
-            $namachildimagesatu = $this->request->getVar('childimagesatulama');
+           $namachildsatub = $this->request->getVar('clsdb');
         }else{
-            $namachildimagesatu = $childimagesatu->getRandomName();
-            $childimagesatu->move('assets/img/uploadtypea', $namachildimagesatu);
-            unlink('assets/img/uploadtypea/' . $this->request->getVar('childimagesatulama'));
+           $namachildsatub = $childimagesatub->getRandomName();
+            $childimagesatub->move('assets/img/uploadtypeb',$namachildsatub);
+            unlink('assets/img/uploadtypeb/' . $this->request->getVar('clsdb'));
         }
-        $childimagedua = $this->request->getFile('childimagedua');
-        if($childimagedua->getError() == 4)
+        $childimageduab = $this->request->getFile('childimageduatypeb');
+        if($childimageduab->getError() == 4)
         {
-            $namachildimagedua = $this->request->getVar('childimagedualama');
+            $namachildduab = $this->request->getVar('clssb');
         }else{
-            $namachildimagedua = $childimagedua->getRandomName();
-            $childimagedua->move('assets/img/uploadtypea', $namachildimagedua);
-            unlink('assets/img/uploadtypea/' . $this->request->getVar('childimagedualama'));
+            $namachildduab = $childimageduab->getRandomName();
+            $childimageduab->move('assets/img/uploadtypeb', $namachildduab);
+            unlink('assets/img/uploadtypeb/' . $this->request->getVar('clssb'));
         }
-        $slugtypea = url_title($this->request->getVar('captionheroimagea'), '-', true);
-       $this->typeaModel->save([
+        $slugtypeb = url_title($this->request->getVar('captionheroimageb'), '-', true);
+       $this->typebModel->save([
            'id' => $id,
-           'heroimage' => $nameheroimage,
-           'captionheroimagea' => $this->request->getVar('captionheroimagea'),
-           'childimagesatu' => $namachildimagesatu,
-           'captionchildimagesatua' => $this->request->getVar('captionchildimagesatua'),
-           'childimagedua' => $namachildimagedua,
-           'captionchildimageduaa' => $this->request->getVar('captionchildimageduaa'),
-           'texttypea' => $this->request->getVar('texttypea'),
-           'slug' => $slugtypea
+           'heroimagetypeb' =>$nameheroimageb,
+           'captionheroimageb' => $this->request->getVar('captionheroimageb'),
+           'childimagesatutypeb' =>$namachildsatub,
+           'captionchildsatuimageb' => $this->request->getVar('captionchildsatuimageb'),
+           'childimageduatypeb' => $namachildduab,
+           'captionchildduaimageb' => $this->request->getVar('captionchildduaimageb'),
+           'texttypeb' => $this->request->getVar('texttypeb'),
+           'slugtypeb' => $slugtypeb
        ]);
        session()->setFlashdata('pesan', 'Data Berhasil di Edit');
-       return redirect()->to('/dashboardtypea');
+       return redirect()->to('/dashboardtypeb');
     }
 
 }
