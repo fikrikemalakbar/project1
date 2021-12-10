@@ -110,12 +110,6 @@ class Dashboardtypea extends BaseController
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'
                 ]
             ],
-            'texttypea'=>[
-                'rules'=>'required',
-                'errors'=>[
-                    'required'=>'wajib di isi'
-                ]
-            ]
         ]))
         {
              return redirect()->to('/dashboardtypea/create')->withInput();
