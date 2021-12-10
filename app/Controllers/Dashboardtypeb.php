@@ -256,8 +256,8 @@ class Dashboardtypeb extends BaseController
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'
                 ]
             ],
-            '	childimagesatutypeb' => [
-                'rules'=>'max_size[	childimagesatutypeb,2048]|is_image[	childimagesatutypeb]|mime_in[	childimagesatutypeb,image/jpg,image/jpeg,image/png]',
+            'childimagesatutypeb' => [
+                'rules'=>'max_size[childimagesatutypeb,2048]|is_image[childimagesatutypeb]|mime_in[childimagesatutypeb,image/jpg,image/jpeg,image/png]',
                 'errors'=>[
                     'max_size' => 'Ukuran Gambar terlalu besar , maximal 2048kb atau 2 mb',
                     'is_image' => 'ini bukan gambar,,harus extension PNG , JPG dan JPEG',
@@ -286,7 +286,7 @@ class Dashboardtypeb extends BaseController
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'
                 ]
             ],
-            'texttypeB'=>[
+            'texttypeb'=>[
                 'rules'=>'required',
                 'errors'=>[
                     'required'=>'wajib di isi'
