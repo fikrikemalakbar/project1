@@ -12,7 +12,9 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
+//front
 $routes->get('/', 'Home::index');
+
 //route gallery dashboard
 $routes->get('/dashboardgallery', 'DashboardGallery::index');
 $routes->get('/dashboardgallery/create', 'DashboardGallery::create');
