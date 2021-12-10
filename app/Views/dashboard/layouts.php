@@ -90,10 +90,25 @@
               </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="<?=base_url()?>/dashboardfeature">
+                <span data-feather="briefcase"></span>
+                Features
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="<?=base_url()?>/dashboardgallery">
                 <span data-feather="image"></span>
                 Gallery
               </a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link item dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
+                aria-expanded="false"><span data-feather="image"></span>Floor plann</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li class="nav-item"><a class="dropdown-item" href="/dashboardtypea">Type A</a></li>
+                <hr>
+                <li class="nav-item"><a class="dropdown-item" href="/dashboardtypeb">Type B</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="<?=base_url()?>/dashboard/logout">
@@ -115,6 +130,7 @@
     integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous">
   </script> -->
   <script src="<?=base_url()?>/assets/bootstrap-5.1.3-examples/dashboard/dashboard.js"></script>
+  <script src="<?=base_url()?>/assets/ckeditor/ckeditor.js"></script>
   <script>
     function galleryImgPreview() {
       const nameGallery = document.querySelector('#name');
@@ -123,10 +139,57 @@
       namaGalleryLabel.textContent = nameGallery.files[0].name;
       const fileNameGallery = new FileReader();
       fileNameGallery.readAsDataURL(nameGallery.files[0]);
-      fileNameGallery.onload = function(e) {
+      fileNameGallery.onload = function (e) {
         imgGalleryPreview.src = e.target.result;
+      }
+    }
+
+    function featureImgPreview() {
+      const nameFeature = document.querySelector('#namefeature');
+      const namaFeatureLabel = document.querySelector('.custom-file-label');
+      const imgFeaturePreview = document.querySelector('.feature-preview');
+      namaFeatureLabel.textContent = nameFeature.files[0].name;
+      const fileNameFeature = new FileReader();
+      fileNameFeature.readAsDataURL(nameFeature.files[0]);
+      fileNameFeature.onload = function (e) {
+        imgFeaturePreview.src = e.target.result;
+      }
+    }
+
+    function heroImgAPreview() {
+      const heroAImage = document.querySelector('#heroimage');
+      const namaHeroALabel = document.querySelector('.custom-file-label');
+      const imgHeroAPreview = document.querySelector('.hero-typea-preview');
+      namaHeroALabel.textContent = heroAImage.files[0].name;
+      const fileHeroAImage = new FileReader();
+      fileHeroAImage.readAsDataURL(heroAImage.files[0]);
+      fileHeroAImage.onload = function (e) {
+        imgHeroAPreview.src = e.target.result;
+      }
+    }
+    function childImgSatuAPreview() {
+      const childsatuAImage = document.querySelector('#childimagesatu');
+      const namaChildsatuALabel = document.querySelector('.custom-file-label');
+      const imgChildsatuAPreview = document.querySelector('.childsatu-typea-preview');
+      namaChildsatuALabel.textContent = childsatuAImage.files[0].name;
+      const fileChildsatuAImage = new FileReader();
+     fileChildsatuAImage.readAsDataURL(childsatuAImage.files[0]);
+     fileChildsatuAImage.onload = function (e) {
+      imgChildsatuAPreview.src = e.target.result;
+      }
+    }
+    function childImgDuaAPreview() {
+      const childduaAImage = document.querySelector('#childimagedua');
+      const namaChildduaALabel = document.querySelector('.custom-file-label');
+      const imgChildduaAPreview = document.querySelector('.childdua-typea-preview');
+      namaChildduaALabel.textContent = childduaAImage.files[0].name;
+      const fileChildduaAImage = new FileReader();
+     fileChildduaAImage.readAsDataURL(childduaAImage.files[0]);
+     fileChildduaAImage.onload = function (e) {
+      imgChildduaAPreview.src = e.target.result;
       }
     }
   </script>
 </body>
+
 </html>

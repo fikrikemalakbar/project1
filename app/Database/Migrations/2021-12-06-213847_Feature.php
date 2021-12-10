@@ -14,15 +14,19 @@ class Feature extends Migration
                 'unsigned'=>true,
                 'auto_increment'=>true
             ],
-            'img'=>[
+            'namefeature'=>[
                 'type'=>'VARCHAR',
-                'constraint'=>200
+                'constraint'=>225
             ],
-            'slug'=>[
+            'altfeature'=>[
                 'type'=>'VARCHAR',
-                'constraint'=>255
+                'constraint'=>225
             ],
-            'text'=>[
+            'slugfeature'=>[
+                'type'=>'VARCHAR',
+                'constraint'=>225
+            ],
+            'featuretext'=>[
                 'type'=>'TEXT'
             ],
             'created_at DATETIME DEFAULT CURRENT_TIMESTAMP',

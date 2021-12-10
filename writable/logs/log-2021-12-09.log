@@ -1,0 +1,271 @@
+ERROR - 2021-12-09 09:50:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '(225) NOT NULL,
+	`slug` VARCHAR(225) NOT NULL,
+	`featuretext` TEXT NOT NULL,
+...' at line 4
+CRITICAL - 2021-12-09 09:52:22 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\edit\gallery.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\xampp\\htdocs...', 8)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/edit/...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\DashboardGallery.php(142): view('dashboard/edit/...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardGallery->edit('ini-gallery')
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardGallery))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 10:57:11 --> Cannot declare class App\Controllers\DashboardGallery, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-09 10:57:26 --> Cannot declare class App\Controllers\DashboardGallery, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-09 10:57:32 --> Cannot declare class App\Controllers\DashboardGallery, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-09 11:00:45 --> Cannot declare class App\Controllers\DashboardGallery, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-09 11:00:46 --> Cannot declare class App\Controllers\DashboardGallery, because the name is already in use
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-12-09 11:01:45 --> Undefined property: App\Controllers\DashboardFeature::$featureyModel
+#0 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 24)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->index()
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-09 11:01:49 --> Undefined property: App\Controllers\DashboardFeature::$featureyModel
+#0 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 24)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->index()
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-09 11:02:05 --> Undefined variable $g
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\feature.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 33)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/featu...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(30): view('dashboard/featu...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->index()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 11:02:23 --> Undefined array key "altfeature"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\feature.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 33)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/featu...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(30): view('dashboard/featu...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->index()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 11:02:29 --> Undefined array key "altfeature"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\feature.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 33)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/featu...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(30): view('dashboard/featu...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->index()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 11:02:54 --> Undefined array key "namefeature"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\feature.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 33)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/featu...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(30): view('dashboard/featu...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->index()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 11:21:38 --> Undefined variable $g
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\feature.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 38)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/featu...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(30): view('dashboard/featu...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->index()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 11:41:06 --> Undefined array key "slug"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\feature.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 37)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/featu...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(30): view('dashboard/featu...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->index()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-12-09 11:57:12 --> Unknown column 'slug' in 'where clause'
+CRITICAL - 2021-12-09 11:57:12 --> Unknown column 'slug' in 'where clause'
+#0 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Model.php(210): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\BaseModel.php(622): CodeIgniter\Model->doFirst()
+#6 D:\xampp\htdocs\project1\app\Models\Feature.php(19): CodeIgniter\BaseModel->first()
+#7 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(43): App\Models\Feature->getFeature('caption-pertama')
+#8 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->detail('caption-pertama')
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#10 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#12 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#13 {main}
+CRITICAL - 2021-12-09 11:59:13 --> Undefined array key "name"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\detail\feature.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 8)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/detai...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(51): view('dashboard/detai...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->detail('caption-pertama')
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 11:59:40 --> Undefined variable $feasture
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\detail\feature.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 8)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/detai...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(51): view('dashboard/detai...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->detail('caption-pertama')
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 12:04:55 --> Undefined array key "name"
+#0 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 133)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->delete('3')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-09 12:05:10 --> Undefined array key "name"
+#0 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(133): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 133)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->delete('3')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-09 13:01:29 --> Undefined property: App\Controllers\DashboardFeature::$galleryModel
+#0 D:\xampp\htdocs\project1\app\Controllers\DashboardFeature.php(206): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 206)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\DashboardFeature->update('7')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DashboardFeature))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-12-09 14:10:59 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UNSIGNED NOT NULL,
+	`heroimage` VARCHAR(225) NOT NULL,
+	`childimage` VARCHAR(...' at line 2
+ERROR - 2021-12-09 14:34:45 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-12-09 14:49:20 --> Unknown table 'projectsatu.users'
+ERROR - 2021-12-09 14:49:20 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-12-09 14:50:35 --> Unknown table 'projectsatu.users'
+ERROR - 2021-12-09 14:50:35 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-12-09 14:53:20 --> Unknown table 'projectsatu.users'
+ERROR - 2021-12-09 14:53:20 --> Error connecting to the database: Class "SQLite3" not found
+ERROR - 2021-12-09 15:27:38 --> Table 'metadescription' already exists
+ERROR - 2021-12-09 15:28:26 --> Table 'metadescription' already exists
+CRITICAL - 2021-12-09 17:05:54 --> Undefined property: App\Controllers\Dashboardtypea::$galleryModel
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypea.php(130): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 130)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypea->save()
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypea))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-09 18:01:34 --> Undefined array key "captionheroimage"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\detail\typea.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 16)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/detai...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypea.php(43): view('dashboard/detai...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypea->detail('hero-image-satu')
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypea))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 18:02:03 --> Undefined array key "captionheroimage"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\detail\typea.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 13)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/detai...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypea.php(43): view('dashboard/detai...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypea->detail('hero-image-satu')
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypea))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 18:42:49 --> Call to undefined method App\Models\Typea::getGallery
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypea.php(202): CodeIgniter\Model->__call('getGallery', Array)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypea->edit('hero-image-satu')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypea))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-09 18:43:40 --> Undefined array key "childimagesatulama"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\edit\typea.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 13)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/edit/...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypea.php(205): view('dashboard/edit/...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypea->edit('hero-image-satu')
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypea))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-09 18:45:16 --> Undefined array key "alt"
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypea.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 215)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypea->update('2')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypea))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-09 18:46:47 --> Undefined array key "captionheroimage"
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypea.php(215): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 215)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypea->update('2')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypea))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-09 18:54:54 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypea.php(225): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\xampp\\htdocs...', 225)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypea->update('2')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypea))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}

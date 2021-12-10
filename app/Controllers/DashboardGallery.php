@@ -16,17 +16,11 @@ class DashboardGallery extends BaseController
         if(!session()->has('logged_user'))
         {
             return redirect()->to(base_url()."/login");
-        }
-        
-        
+        }       
         $data = [
             'title'=>'Dashboard Gallery',
             'gallery'=>$this->galleryModel->getGallery()
         ];
-
-       
-       
-
         return view('dashboard/gallery',$data);
     }
 
@@ -149,7 +143,7 @@ class DashboardGallery extends BaseController
         }
        
         $oldGallery = $this->galleryModel->getGallery($this->request->getVar('slug'));
-        if($oldGallery == $this->request->getVar('alt'))
+        if($oldGallery['alt'] == $this->request->getVar('alt'))
         {
             $rule_alt = 'required';
         }
@@ -190,9 +184,9 @@ class DashboardGallery extends BaseController
         $slug = url_title($this->request->getVar('alt'), '-', true);
        $this->galleryModel->save([
            'id' => $id,
+           'alt' => $this->request->getVar('alt'),
            'slug' => $slug,
            'name' => $nameUpload,
-           'alt' => $this->request->getVar('alt'),
        ]);
        session()->setFlashdata('pesan', 'Data Berhasil di Edit');
        return redirect()->to('/dashboardgallery');

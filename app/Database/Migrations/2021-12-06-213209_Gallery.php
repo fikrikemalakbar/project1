@@ -14,15 +14,15 @@ class Gallery extends Migration
                 'unsigned'=>true,
                 'auto_increment'=>true
             ],
+            'alt'=>[
+                'type'=>'VARCHAR',
+                'constraint'=>255
+            ],
             'slug'=>[
                 'type'=>'VARCHAR',
                 'constraint'=>255
             ],
             'name'=>[
-                'type'=>'VARCHAR',
-                'constraint'=>255
-            ],
-            'alt'=>[
                 'type'=>'VARCHAR',
                 'constraint'=>255
             ],
