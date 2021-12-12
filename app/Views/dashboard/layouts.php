@@ -29,6 +29,7 @@
       vertical-align: middle;
     }
 
+
     @media (min-width: 768px) {
       .bd-placeholder-img-lg {
         font-size: 3.5rem;
@@ -90,6 +91,12 @@
               </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="<?=base_url()?>/dashboardcontactperson">
+                <span data-feather="book-open"></span>
+                Contact Company
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="<?=base_url()?>/dashboardfeature">
                 <span data-feather="briefcase"></span>
                 Features
@@ -101,21 +108,104 @@
                 Gallery
               </a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link item dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown"
-                aria-expanded="false"><span data-feather="image"></span>Floor plann</a>
-              <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                <li class="nav-item"><a class="dropdown-item" href="/dashboardtypea">Type A</a></li>
-                <hr>
-                <li class="nav-item"><a class="dropdown-item" href="/dashboardtypeb">Type B</a></li>
-              </ul>
-            </li>
             <li class="nav-item">
-              <a class="nav-link" href="<?=base_url()?>/dashboard/logout">
-                <span data-feather="log-out"></span>
-                sign-out
+                <a class="nav-link" href="<?=base_url()?>/dashboardmarketing">
+                  <span data-feather="image"></span>
+                  Marketing Gallerty
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?=base_url()?>/dashboardbank">
+                  <span data-feather="dollar-sign"></span>
+                  Bank
+                </a>
+              </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=base_url()?>/dashboardbgfloor">
+                <span data-feather="crop"></span>
+                Background FloorGallery
               </a>
             </li>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button bg-light collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <div class="nav-item">
+                      <div style="font-size:15px;" class="nav-link">Type A</div>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                  <li class="nav-item">
+                  <a class="nav-link" href="<?=base_url()?>/dashboardtypeahero">
+                    <span data-feather="corner-down-right"></span>
+                    Type A Hero
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?=base_url()?>/dashboardtypeachild">
+                    <span data-feather="corner-down-right"></span>
+                    Type A Child
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?=base_url()?>/dashboardtypeatext">
+                    <span data-feather="corner-down-right"></span>
+                    Type A Text
+                  </a>
+                </li>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button bg-light collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div class="nav-item">
+                      <div style="font-size:15px;" class="nav-link">Type B</div>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                  <li class="nav-item">
+                  <a class="nav-link" href="<?=base_url()?>/dashboardtypebhero">
+                    <span data-feather="corner-down-right"></span>
+                    Type B Hero
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?=base_url()?>/dashboardtypebchild">
+                    <span data-feather="corner-down-right"></span>
+                    Type B Child
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="<?=base_url()?>/dashboardtypebtext">
+                    <span data-feather="corner-down-right"></span>
+                    Type B Text
+                  </a>
+                </li>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link" href="<?=base_url()?>/dashboardsiteplan">
+                  <span data-feather="layout"></span>
+                  Site Plan
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="<?=base_url()?>/dashboard/logout">
+                  <span data-feather="log-out"></span>
+                  sign-out
+                </a>
+              </li>
           </ul>
         </div>
       </nav>
@@ -156,70 +246,111 @@
       }
     }
 
-    function heroImgAPreview() {
-      const heroAImage = document.querySelector('#heroimage');
-      const namaHeroALabel = document.querySelector('.custom-file-label');
-      const imgHeroAPreview = document.querySelector('.hero-typea-preview');
-      namaHeroALabel.textContent = heroAImage.files[0].name;
-      const fileHeroAImage = new FileReader();
-      fileHeroAImage.readAsDataURL(heroAImage.files[0]);
-      fileHeroAImage.onload = function (e) {
-        imgHeroAPreview.src = e.target.result;
+    function typeaheroPreview() {
+      const nametypeahero = document.querySelector('#aheroimage');
+      const namalabelahero = document.querySelector('.custom-file-label');
+      const imgaheropreview = document.querySelector('.typeahero-preview');
+      namalabelahero.textContent = nametypeahero.files[0].name;
+      const filenamatypeahero = new FileReader();
+      filenamatypeahero.readAsDataURL(nametypeahero.files[0]);
+      filenamatypeahero.onload = function (e) {
+        imgaheropreview.src = e.target.result;
       }
     }
-    function childImgSatuAPreview() {
-      const childsatuAImage = document.querySelector('#childimagesatu');
-      const namaChildsatuALabel = document.querySelector('.custom-file-label');
-      const imgChildsatuAPreview = document.querySelector('.childsatu-typea-preview');
-      namaChildsatuALabel.textContent = childsatuAImage.files[0].name;
-      const fileChildsatuAImage = new FileReader();
-     fileChildsatuAImage.readAsDataURL(childsatuAImage.files[0]);
-     fileChildsatuAImage.onload = function (e) {
-      imgChildsatuAPreview.src = e.target.result;
+
+    function typeachildPreview() {
+      const nametypeachild = document.querySelector('#achildimage');
+      const namalabelachild = document.querySelector('.custom-file-label');
+      const imgachildpreview = document.querySelector('.typeachild-preview');
+      namalabelachild.textContent = nametypeachild.files[0].name;
+      const filenamatypeachild = new FileReader();
+      filenamatypeachild.readAsDataURL(nametypeachild.files[0]);
+      filenamatypeachild.onload = function (e) {
+        imgachildpreview.src = e.target.result;
       }
     }
-    function childImgDuaAPreview() {
-      const childduaAImage = document.querySelector('#childimagedua');
-      const namaChildduaALabel = document.querySelector('.custom-file-label');
-      const imgChildduaAPreview = document.querySelector('.childdua-typea-preview');
-      namaChildduaALabel.textContent = childduaAImage.files[0].name;
-      const fileChildduaAImage = new FileReader();
-     fileChildduaAImage.readAsDataURL(childduaAImage.files[0]);
-     fileChildduaAImage.onload = function (e) {
-      imgChildduaAPreview.src = e.target.result;
+
+    function typebheroPreview() {
+      const nametypebhero = document.querySelector('#bheroimage');
+      const namalabelbhero = document.querySelector('.custom-file-label');
+      const imgbheropreview = document.querySelector('.typebhero-preview');
+      namalabelbhero.textContent = nametypebhero.files[0].name;
+      const filenamatypebhero = new FileReader();
+      filenamatypebhero.readAsDataURL(nametypebhero.files[0]);
+      filenamatypebhero.onload = function (e) {
+        imgbheropreview.src = e.target.result;
       }
     }
-    function heroImgBPreview() {
-      const herobimage = document.querySelector('#heroimagetypeb');
-      const namalabelherob = document.querySelector('.custom-file-label');
-      const imgherobpreview = document.querySelector('.hero-typeb-preview');
-      namalabelherob.textContent = herobimage.files[0].name;
-      const fileherobimage = new FileReader();
-      fileherobimage.readAsDataURL(herobimage.files[0]);
-      fileherobimage.onload = function (e) {
-        imgherobpreview.src = e.target.result;
+
+    function typebchildPreview() {
+      const nametypebchild = document.querySelector('#bchildimage');
+      const namalabelbchild = document.querySelector('.custom-file-label');
+      const imgbchildpreview = document.querySelector('.typebchild-preview');
+      namalabelbchild.textContent = nametypebchild.files[0].name;
+      const filenamatypebchild = new FileReader();
+      filenamatypebchild.readAsDataURL(nametypebchild.files[0]);
+      filenamatypebchild.onload = function (e) {
+        imgbchildpreview.src = e.target.result;
       }
     }
-    function childImgSatuBPreview() {
-      const childbimagesatu = document.querySelector('#childimagesatutypeb');
-      const namachildbsatulabel = document.querySelector('.custom-file-label');
-      const imgchildsatupreview = document.querySelector('.childsatu-typeb-preview');
-      namachildbsatulabel.textContent = childbimagesatu.files[0].name;
-      const filechildbimagesatu = new FileReader();
-     filechildbimagesatu.readAsDataURL(childbimagesatu.files[0]);
-     filechildbimagesatu.onload = function (e) {
-      imgchildsatupreview.src = e.target.result;
+    function bgfloorPreview() {
+      const namebgfloor = document.querySelector('#imagebg');
+      const namalabelbgfloor = document.querySelector('.custom-file-label');
+      const imgbgfloorpreview = document.querySelector('.bgfloor-preview');
+      namalabelbgfloor.textContent = namebgfloor.files[0].name;
+      const filenamabgfloor = new FileReader();
+      filenamabgfloor.readAsDataURL(namebgfloor.files[0]);
+      filenamabgfloor.onload = function (e) {
+        imgbgfloorpreview.src = e.target.result;
       }
     }
-    function childImgDuaBPreview() {
-      const childduaimageb = document.querySelector('#childimageduatypeb');
-      const namachildduablabel = document.querySelector('.custom-file-label');
-      const imgchildduab = document.querySelector('.childdua-typeb-preview');
-     namachildduablabel.textContent = childduaimageb.files[0].name;
-      const filechildduaimageb = new FileReader();
-     filechildduaimageb.readAsDataURL(childduaimageb.files[0]);
-     filechildduaimageb.onload = function (e) {
-      imgchildduab.src = e.target.result;
+
+    function imagesitePreview() {
+      const nameimagesite = document.querySelector('#imagesite');
+      const namalabelimagesite = document.querySelector('.custom-file-label');
+      const imgimagesitepreview = document.querySelector('.imagesite-preview');
+      namalabelimagesite.textContent = nameimagesite.files[0].name;
+      const filenamaimagesite = new FileReader();
+      filenamaimagesite.readAsDataURL(nameimagesite.files[0]);
+      filenamaimagesite.onload = function (e) {
+        imgimagesitepreview.src = e.target.result;
+      }
+    }
+
+    function imagemapsPreview() {
+      const nameimagemaps = document.querySelector('#imagemaps');
+      const namalabelimagemaps = document.querySelector('.custom-file-label');
+      const imgimagemapspreview = document.querySelector('.imagemaps-preview');
+      namalabelimagemaps.textContent = nameimagemaps.files[0].name;
+      const filenamaimagemaps = new FileReader();
+      filenamaimagemaps.readAsDataURL(nameimagemaps.files[0]);
+      filenamaimagemaps.onload = function (e) {
+        imgimagemapspreview.src = e.target.result;
+      }
+    }
+
+    function imagemarketingPreview() {
+      const nameimagemarketing = document.querySelector('#imagemarketing');
+      const namalabelimagemarketing = document.querySelector('.custom-file-label');
+      const imgimagemarketingpreview = document.querySelector('.imagemarketing-preview');
+      namalabelimagemarketing.textContent = nameimagemarketing.files[0].name;
+      const filenamaimagemarketing = new FileReader();
+      filenamaimagemarketing.readAsDataURL(nameimagemarketing.files[0]);
+      filenamaimagemarketing.onload = function (e) {
+        imgimagemarketingpreview.src = e.target.result;
+      }
+    }
+
+    
+    function imagebankPreview() {
+      const nameimagebank = document.querySelector('#imagebank');
+      const namalabelimagebank = document.querySelector('.custom-file-label');
+      const imgimagebankpreview = document.querySelector('.imagebank-preview');
+      namalabelimagebank.textContent = nameimagebank.files[0].name;
+      const filenamaimagebank = new FileReader();
+      filenamaimagebank.readAsDataURL(nameimagebank.files[0]);
+      filenamaimagebank.onload = function (e) {
+        imgimagebankpreview.src = e.target.result;
       }
     }
   </script>

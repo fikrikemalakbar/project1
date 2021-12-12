@@ -7,7 +7,7 @@
         <div class="card mb-3" style="max-width: 950px;">
             <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="<?=base_url()?>/assets/img/<?=$gallery['name']?>" class="img-fluid rounded-start" alt="<?=$gallery['alt']?>">
+                    <img src="<?=base_url()?>/assets/img/upload/<?=$gallery['name']?>" class="img-fluid rounded-start" alt="<?=$gallery['alt']?>">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">

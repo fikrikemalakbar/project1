@@ -18,7 +18,11 @@ class Typebchildimage extends Migration
                 'type'=>'VARCHAR',
                 'constraint'=>225,
             ],
-            'slugbtype'=>[
+            'bcaptionchild'=>[
+                'type'=>'VARCHAR',
+                'constraint'=>225,
+            ],
+            'slugbchild'=>[
                 'type'=>'VARCHAR',
                 'constraint'=>225
             ],

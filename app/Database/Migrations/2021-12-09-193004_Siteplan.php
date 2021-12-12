@@ -34,10 +34,6 @@ class Siteplan extends Migration
                 'type'=>'VARCHAR',
                 'constraint'=>225
             ],
-            'slugsite'=>[
-                'type'=>'VARCHAR',
-                'constraint'=>225
-            ],
             'created_at DATETIME DEFAULT CURRENT_TIMESTAMP',
             'updated_at DATETIME DEFAULT CURRENT_TIMESTAMP'
         ]);

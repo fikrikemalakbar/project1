@@ -22,10 +22,6 @@ class Bank extends Migration
                 'type'=>'VARCHAR',
                 'constraint'=>225
             ],
-            'slugbank'=>[
-                'type'=>'VARCHAR',
-                'constraint'=>225
-            ],
             'created_at DATETIME DEFAULT CURRENT_TIMESTAMP',
             'updated_at DATETIME DEFAULT CURRENT_TIMESTAMP'
         ]);

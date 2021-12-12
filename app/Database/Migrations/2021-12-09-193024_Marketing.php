@@ -14,15 +14,11 @@ class Marketing extends Migration
                 'unsigned'=>true,
                 'auto_increment'=>true
             ],
-            'ímagemarketing'=>[
+            'imagemarketing'=>[
                 'type'=>'VARCHAR',
                 'constraint'=>225
             ],
             'captionmarketing'=>[
-                'type'=>'VARCHAR',
-                'constraint'=>225
-            ],
-            'slugmarketing'=>[
                 'type'=>'VARCHAR',
                 'constraint'=>225
             ],

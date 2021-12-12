@@ -18,6 +18,10 @@ class Typeachildimage extends Migration
                 'type'=>'VARCHAR',
                 'constraint'=>225
             ],
+            'acaptionchild'=>[
+                'type'=>'VARCHAR',
+                'constraint'=>225
+            ],
             'slugachild'=>[
                 'type'=>'VARCHAR',
                 'constraint'=>225

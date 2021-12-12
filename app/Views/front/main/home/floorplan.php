@@ -40,20 +40,16 @@
                         </div>
                     </div>
                     <div class="col l6 m12 s12">
-                        <div class="floorDetail">
+                        <!-- <div class="floorDetail">
                             Detail
-                        </div>
+                        </div> -->
                         <div class="row">
+                            <?php foreach($typeatext as $txt) : ?>
                             <div class="col l12 s12 m12">
-                                <div class="floorUDText">
-                                    <ol>
-                                        <li> and Size = 84</li>
-                                        <li> Building Size = 75</li>
-                                        <li> Bedroom = 3</li>
-                                        <li> Bathroom = 2</li>
-                                        <li> Carport = 1</li>
-                                    </ol>
-                                </div>
+                                <!-- <div class="floorUDText"> -->
+                                   <?=$txt['texttypea']?>
+                                <!-- </div> -->
+                                <?php endforeach;?>
                             </div>
                             <div class="col l12 s12 m12">
                                 <div class="row">

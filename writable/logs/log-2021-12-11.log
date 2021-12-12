@@ -1,0 +1,323 @@
+CRITICAL - 2021-12-11 13:53:00 --> Undefined property: App\Controllers\Dashboardtypebhero::$typeaheroModel
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypebhero.php(137): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 137)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypebhero->edit('intro-satu')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypebhero))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-11 14:40:18 --> Undefined property: App\Controllers\Dashboardtypebchild::$typebachildModel
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardtypebchild.php(136): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 136)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardtypebchild->edit('test-satu')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardtypebchild))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+ERROR - 2021-12-11 15:34:26 --> Table 'projectsatu.contactperson_wa' doesn't exist
+CRITICAL - 2021-12-11 15:34:26 --> Table 'projectsatu.contactperson_wa' doesn't exist
+#0 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT 1\nFROM `...', 0)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('SELECT 1\nFROM `...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT 1\nFROM `...')
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1443): CodeIgniter\Database\BaseConnection->query('SELECT 1\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Validation\Rules.php(161): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Validation\Validation.php(277): CodeIgniter\Validation\Rules->is_unique('0854575', 'contactperson_w...', Array, NULL)
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Validation\Validation.php(151): CodeIgniter\Validation\Validation->processRules('wa', 'wa', '0854575', Array, Array)
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Controller.php(160): CodeIgniter\Validation\Validation->run()
+#8 D:\xampp\htdocs\project1\app\Controllers\Dashboardcontactperson.php(50): CodeIgniter\Controller->validate(Array)
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardcontactperson->save()
+#10 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardcontactperson))
+#11 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2021-12-11 15:36:47 --> Undefined property: App\Controllers\Dashboardcontactperson::$typeatextModel
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardcontactperson.php(79): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 79)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardcontactperson->save()
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardcontactperson))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-11 15:37:51 --> Undefined array key "telephone"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\contactperson.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 22)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/conta...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\Dashboardcontactperson.php(24): view('dashboard/conta...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardcontactperson->index()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardcontactperson))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-11 16:03:30 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardcontactperson.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\xampp\\htdocs...', 119)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardcontactperson->update('3')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardcontactperson))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-11 16:07:15 --> Trying to access array offset on value of type null
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardcontactperson.php(119): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to acces...', 'D:\\xampp\\htdocs...', 119)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardcontactperson->update('3')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardcontactperson))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-11 16:08:47 --> Too few arguments to function App\Controllers\Dashboardcontactperson::edit(), 0 passed in D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardcontactperson->edit()
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardcontactperson))
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-11 16:09:56 --> Too few arguments to function App\Controllers\Dashboardcontactperson::edit(), 0 passed in D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardcontactperson->edit()
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardcontactperson))
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-11 16:10:56 --> Too few arguments to function App\Controllers\Dashboardcontactperson::edit(), 0 passed in D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php on line 824 and exactly 1 expected
+#0 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardcontactperson->edit()
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardcontactperson))
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-11 16:35:45 --> Undefined property: App\Controllers\Dashboardbgfloor::$bgfloorModel
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardbgfloor.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 22)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardbgfloor->index()
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardbgfloor))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-11 16:35:59 --> Undefined property: App\Controllers\Dashboardbgfloor::$bgfloorModel
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardbgfloor.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 22)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardbgfloor->index()
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardbgfloor))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-11 16:36:12 --> Undefined property: App\Controllers\Dashboardbgfloor::$bgfloorModel
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardbgfloor.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 22)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardbgfloor->index()
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardbgfloor))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-11 16:36:58 --> Call to undefined method App\Models\BgfloorModel::getbgfloor
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardbgfloor.php(22): CodeIgniter\Model->__call('getbgfloor', Array)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardbgfloor->index()
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardbgfloor))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-11 17:05:40 --> Undefined property: App\Controllers\Dashboardbgfloor::$bgflorrModel
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardbgfloor.php(109): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined prope...', 'D:\\xampp\\htdocs...', 109)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardbgfloor->save()
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardbgfloor))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}
+CRITICAL - 2021-12-11 17:23:54 --> Undefined variable $typebtext
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\edit\bgfloor.php(45): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined varia...', 'D:\\xampp\\htdocs...', 45)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/edit/...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\Dashboardbgfloor.php(145): view('dashboard/edit/...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardbgfloor->edit('test-satu')
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardbgfloor))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-11 17:28:21 --> unlink(assets/img/upload/bgfloor/1639264197_2dbea3a10d803bdb2d7a.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(assets/i...', 'D:\\xampp\\htdocs...', 197)
+#1 D:\xampp\htdocs\project1\app\Controllers\Dashboardbgfloor.php(197): unlink('assets/img/uplo...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardbgfloor->update('3')
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardbgfloor))
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-11 17:29:34 --> unlink(assets/img/upload/bgfloor/1639265361_86fc445654450c50bc78.jpg): No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(assets/i...', 'D:\\xampp\\htdocs...', 197)
+#1 D:\xampp\htdocs\project1\app\Controllers\Dashboardbgfloor.php(197): unlink('assets/img/uplo...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardbgfloor->update('4')
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardbgfloor))
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#7 {main}
+CRITICAL - 2021-12-11 18:27:16 --> finfo_file(D:\xampp\tmp\php635.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\x...', 'D:\\xampp\\htdocs...', 109)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #166, 'D:\\xampp\\tmp\\ph...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 D:\xampp\htdocs\project1\app\Controllers\Dashboardsiteplan.php(110): CodeIgniter\Files\File->getRandomName()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardsiteplan->save()
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardsiteplan))
+#8 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-12-11 18:28:40 --> finfo_file(D:\xampp\tmp\php4C05.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\x...', 'D:\\xampp\\htdocs...', 109)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #166, 'D:\\xampp\\tmp\\ph...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 D:\xampp\htdocs\project1\app\Controllers\Dashboardsiteplan.php(110): CodeIgniter\Files\File->getRandomName()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardsiteplan->save()
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardsiteplan))
+#8 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-12-11 18:31:38 --> finfo_file(D:\xampp\tmp\php328.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\x...', 'D:\\xampp\\htdocs...', 109)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #166, 'D:\\xampp\\tmp\\ph...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 D:\xampp\htdocs\project1\app\Controllers\Dashboardsiteplan.php(110): CodeIgniter\Files\File->getRandomName()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardsiteplan->save()
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardsiteplan))
+#8 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-12-11 18:35:18 --> finfo_file(D:\xampp\tmp\php5E6B.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\x...', 'D:\\xampp\\htdocs...', 109)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #166, 'D:\\xampp\\tmp\\ph...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 D:\xampp\htdocs\project1\app\Controllers\Dashboardsiteplan.php(110): CodeIgniter\Files\File->getRandomName()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardsiteplan->save()
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardsiteplan))
+#8 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-12-11 18:43:01 --> finfo_file(D:\xampp\tmp\php6FC8.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\x...', 'D:\\xampp\\htdocs...', 109)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #166, 'D:\\xampp\\tmp\\ph...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 D:\xampp\htdocs\project1\app\Controllers\Dashboardsiteplan.php(110): CodeIgniter\Files\File->getRandomName()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardsiteplan->save()
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardsiteplan))
+#8 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-12-11 18:45:35 --> finfo_file(D:\xampp\tmp\phpC9D8.tmp): Failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'finfo_file(D:\\x...', 'D:\\xampp\\htdocs...', 109)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(109): finfo_file(Resource id #158, 'D:\\xampp\\tmp\\ph...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(297): CodeIgniter\Files\File->getMimeType()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\HTTP\Files\UploadedFile.php(286): CodeIgniter\HTTP\Files\UploadedFile->guessExtension()
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Files\File.php(121): CodeIgniter\HTTP\Files\UploadedFile->getExtension()
+#5 D:\xampp\htdocs\project1\app\Controllers\Dashboardsiteplan.php(110): CodeIgniter\Files\File->getRandomName()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardsiteplan->save()
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardsiteplan))
+#8 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#10 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#11 {main}
+CRITICAL - 2021-12-11 19:45:07 --> Call to a member function getError() on null
+#0 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardmarketing->save()
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardmarketing))
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#5 {main}
+CRITICAL - 2021-12-11 19:53:45 --> Undefined array key "imagemarketing"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\marketing.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 20)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/marke...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\Dashboardmarketing.php(23): view('dashboard/marke...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardmarketing->index()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardmarketing))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-11 19:55:42 --> Undefined array key "imagemarketing"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\marketing.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 20)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/marke...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\Dashboardmarketing.php(23): view('dashboard/marke...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardmarketing->index()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardmarketing))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+ERROR - 2021-12-11 19:59:04 --> Unknown column 'imagemarketing' in 'field list'
+CRITICAL - 2021-12-11 19:59:04 --> Unknown column 'imagemarketing' in 'field list'
+#0 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\project1\app\Controllers\Dashboardmarketing.php(87): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardmarketing->save()
+#10 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardmarketing))
+#11 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+ERROR - 2021-12-11 20:00:30 --> Unknown column 'imagemarketing' in 'field list'
+CRITICAL - 2021-12-11 20:00:30 --> Unknown column 'imagemarketing' in 'field list'
+#0 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `ma...', 0)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(670): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ma...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseConnection.php(598): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ma...')
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1759): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ma...', Array, false)
+#4 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Model.php(239): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\BaseModel.php(738): CodeIgniter\Model->doInsert(Array)
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Model.php(620): CodeIgniter\BaseModel->insert(Array, false)
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\BaseModel.php(658): CodeIgniter\Model->insert(Array, false)
+#8 D:\xampp\htdocs\project1\app\Controllers\Dashboardmarketing.php(87): CodeIgniter\BaseModel->save(Array)
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardmarketing->save()
+#10 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardmarketing))
+#11 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#13 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#14 {main}
+CRITICAL - 2021-12-11 20:04:41 --> Undefined array key "imagemarketing"
+#0 D:\xampp\htdocs\project1\app\Views\dashboard\marketing.php(20): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 20)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(214): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\View\View.php(217): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Common.php(1097): CodeIgniter\View\View->render('dashboard/marke...', Array, true)
+#4 D:\xampp\htdocs\project1\app\Controllers\Dashboardmarketing.php(23): view('dashboard/marke...', Array)
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardmarketing->index()
+#6 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardmarketing))
+#7 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#9 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#10 {main}
+CRITICAL - 2021-12-11 20:29:37 --> Undefined array key "imagesite"
+#0 D:\xampp\htdocs\project1\app\Controllers\Dashboardmarketing.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array...', 'D:\\xampp\\htdocs...', 102)
+#1 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(824): App\Controllers\Dashboardmarketing->delete('4')
+#2 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(410): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboardmarketing))
+#3 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\CodeIgniter.php(318): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 D:\xampp\htdocs\project1\public\index.php(37): CodeIgniter\CodeIgniter->run()
+#5 D:\xampp\htdocs\project1\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(43): require_once('D:\\xampp\\htdocs...')
+#6 {main}

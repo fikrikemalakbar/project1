@@ -14,7 +14,7 @@ class Typebtext extends Migration
                 'unsigned'=>true,
                 'auto_increment'=>true
             ],
-            'textbtype'=>[
+            'texttypeb'=>[
                 'type'=>'TEXT'
             ],
             'created_at DATETIME DEFAULT CURRENT_TIMESTAMP',

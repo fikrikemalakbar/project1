@@ -83,7 +83,7 @@ class DashboardFeature extends BaseController
                 ]
             ],
             'altfeature'=>[
-                'rules'=>'required|is_unique[gallery.alt]',
+                'rules'=>'required|is_unique[feature.altfeature]',
                 'errors'=>[
                     'required'=> 'Caption harus di isi , tidak boleh kosong',
                     'is_unique'=> 'Caption sudah ada harus unique atau Caption sudah terdaftar'

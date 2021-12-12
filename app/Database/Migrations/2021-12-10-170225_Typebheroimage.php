@@ -18,6 +18,10 @@ class Typebheroimage extends Migration
                 'type'=>'VARCHAR',
                 'constraint'=>225
             ],
+            'bcaptionhero'=>[
+                'type'=>'VARCHAR',
+                'constraint'=>225
+            ],
             'slugbtype'=>[
                 'type'=>'VARCHAR',
                 'constraint'=>225
