@@ -26,6 +26,6 @@ class Metadescription extends Migration
 
     public function down()
     {
-        //
+        $this->forge->dropTable('Metadescription');
     }
 }

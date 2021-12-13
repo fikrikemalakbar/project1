@@ -22,17 +22,12 @@ class Audience extends Migration
                 'type'=>'VARCHAR',
                 'constraint'=>225
             ],
-            'slugaudience'=>[
-                'type'=>'VARCHAR',
-                'constraint'=>225
-            ],
             'nameaudience'=>[
                 'type'=>'VARCHAR',
                 'constraint'=>225
             ],
-            'slugaudience'=>[
-                'type'=>'VARCHAR',
-                'constraint'=>225
+            'textaudience'=>[
+                'type'=>'TEXT'
             ],
             'created_at DATETIME DEFAULT CURRENT_TIMESTAMP',
             'updated_at DATETIME DEFAULT CURRENT_TIMESTAMP'

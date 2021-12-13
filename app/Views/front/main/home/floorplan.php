@@ -1,70 +1,49 @@
-<div style="height:100%;" class="parallax-container">
-    <div class="parallax">
-        <img class="imageFloor" src="<?=base_url()?>/assets/img/10.jpg" alt="cluster">
-        <!-- <div class="filter">
-        </div> -->
-    </div>
-    <div class="floorplanMain">
-        <div class="floorBuai">
-            <div class="floorplanHeader">
-                <div class="row">
-                    <div class="floorplanHTitle">
-                        <div class="col l12 s12 m12">
-                            FLOOR PLAN
-                        </div>
-                    </div>
-                    <div class="floorplanHText">
-                        <div class="col l12 s12 m12">
-                            Setiap hunian Trevista Hills memiliki ruang yang lega dan memiliki inner garden dengan
-                            interior minimalis yang elegan dan artistik.
-                        </div>
-                    </div>
-                    <div class="floorplanHType">
-                        <div class="col l12 s12 m12">
-                            Type A (75/84) - Harga ± Rp 900 Juta-an
-                        </div>
-                    </div>
+<?php foreach($bgfloor as $flr) : ?>
+<style>
+    .floorBackground {
+        position: relative;
+        opacity: 0.4;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .floorBackground {
+        background-image: url(/assets/img/uploadbgfloor/<?=$flr['imagebg']?>);
+        min-height: 100vh;
+        max-width: 100%;
+    }
+
+    .floorOne {
+        background-color: rgba(21, 3, 49, 0.5);
+    }
+</style>
+<?php endforeach;?>
+<div class="floorBackground">
+    <div class="floorOne">
+        <div class="floorOneHeader">
+            <div class="row">
+                <?php foreach($bgfloor as $fh) : ?>
+                <div class="col s12">
+                    <?=$fh['titlebg']?>
                 </div>
+                <?php endforeach;?>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col l6 m12 s12">
-                        <div class="row">
-                            <div class="col l12 s12 m12">
-                                <img style="width:100%;height:300px;" src="<?=base_url()?>/assets/img/1.jpg" alt="1">
-                            </div>
-                            <div class="col l12 s12 m12">
-                                <br>
-                                <img style="width:100%;height:300px;" src="<?=base_url()?>/assets/img/2.jpg" alt="2">
-                            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col l6 m6 s12">
+                    <div class="row">
+                        <?php foreach($typeahero as $tp) : ?>
+                        <div class="col l12">
+                            <img  style="max-width:100%;max-height:100%;padding-bottom:10px;" src="<?=base_url()?>/assets/img/uploadtypeahero/<?=$tp['aheroimage']?>" alt="<?=$tp['acaptionhero']?>">
                         </div>
-                    </div>
-                    <div class="col l6 m12 s12">
-                        <!-- <div class="floorDetail">
-                            Detail
-                        </div> -->
-                        <div class="row">
-                            <?php foreach($typeatext as $txt) : ?>
-                            <div class="col l12 s12 m12">
-                                <!-- <div class="floorUDText"> -->
-                                   <?=$txt['texttypea']?>
-                                <!-- </div> -->
-                                <?php endforeach;?>
-                            </div>
-                            <div class="col l12 s12 m12">
-                                <div class="row">
-                                    <div class="col l12 s12 m12">
-                                       <?=$this->include('front/main/image/floorplan')?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach;?>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <br>
-    <?=$this->include('front/main/home/third')?>
-    <?=$this->include('front/main/home/gallery')?>
 </div>

@@ -9,17 +9,17 @@
                     </div>
                     <br>
                     <div class="col l12">
-                        <a style="width:100%;" class="waves-effect waves-light indigo btn-large">08546546546544</a>
+                        <a class="btnWa">08546546546544</a>
                     </div>
                     <div class="col l12">
                         <br>
                         <a style="width:100%;"
-                            class="waves-effect waves-light cyan accent-4 btn-large">08546546546544</a>
+                            class="btnPhone">08546546546544</a>
                     </div>
                     <div class="col l12">
                         <br>
                         <a href="<?=base_url()?>/assets/img/4.jpg" download style="width:100%;"
-                        class="waves-effect waves-light red darken-4 btn-large">Download
+                        class="btnCatalog">Download
                         Catalogue</a>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                     <img style="width:100%;height:300px;" src="<?=base_url()?>/assets/img/uploadfeature/<?=$f['namefeature']?>" alt="<?=$f['altfeature']?>">
                 </div>
                 <div class="col s12">
-                    <a style="width:100%;" class="waves-effect waves-light indigo btn-large">08546546546544</a>
+                    <a  class="btnWa">08546546546544</a>
                 </div>
                 <div class="col s12">
                     <br>

@@ -1,6 +1,0 @@
-__ci_last_regenerate|i:1639097685;_ci_previous_url|s:67:"http://localhost:8080/index.php/dashboardtypea/edit/hero-image-satu";logged_user|s:32:"30c34e0855ed0f7fd83907c120283fd7";logged_info|i:1;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:9:{s:14:"csrf_test_name";s:32:"139ea2ed3285fe6a0d465ea602460f40";s:9:"slugtypea";s:15:"hero-image-satu";s:13:"heroimagelama";s:35:"1639095068_16a16c72b43b66c58d75.jpg";s:18:"childimagesatulama";s:35:"1639095068_9ec8ff70909750b17893.jpg";s:17:"childimagedualama";s:35:"1639095068_53e0f521afc11623bef8.jpg";s:17:"captionheroimagea";s:15:"hero image satu";s:22:"captionchildimagesatua";s:23:"caption child satu-satu";s:21:"captionchildimageduaa";s:22:"caption child dua-satu";s:9:"texttypea";s:96:"<ul>
-	<li>ini caption satu</li>
-	<li>ini caption dua</li>
-	<li>ini caption tiga</li>
-</ul>
-";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_validation_errors|s:199:"a:2:{s:22:"captionchildimagesatua";s:59:"Caption sudah ada harus unique atau Caption sudah terdaftar";s:21:"captionchildimageduaa";s:59:"Caption sudah ada harus unique atau Caption sudah terdaftar";}";

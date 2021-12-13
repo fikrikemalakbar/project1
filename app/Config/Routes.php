@@ -103,6 +103,19 @@ $routes->get('/dashboardbank/create', 'Dashboardbank::create');
 $routes->get('/dashboardbank/edit/(:segment)', 'Dashboardbank::edit/$1');
 $routes->delete('/dashboardbank/(:num)', 'Dashboardbank::delete/$1');
 
+//meta description
+$routes->get('/dashboardmetadescription', 'Dashboardmetadescription::index');
+$routes->get('/dashboardmetadescription/create', 'Dashboardmetadescription::create');
+$routes->get('/dashboardmetadescription/edit/(:segment)', 'Dashboardmetadescription::edit/$1');
+$routes->delete('/dashboardmetadescription/(:num)', 'Dashboardmetadescription::delete/$1');
+
+
+//audience
+$routes->get('/dashboardaudience', 'Dashboardaudience::index');
+$routes->get('/dashboardaudience/create', 'Dashboardaudience::create');
+$routes->get('/dashboardaudience/edit/(:segment)', 'Dashboardaudience::edit/$1');
+$routes->delete('/dashboardaudience/(:num)', 'Dashboardaudience::delete/$1');
+
 
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';

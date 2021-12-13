@@ -13,6 +13,9 @@
   <link href="<?=base_url()?>/assets/bootstrap-5.1.3-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
+    .sidebar{
+      overflow-y: scroll;
+    }
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -88,6 +91,18 @@
               <a class="nav-link" href="<?=base_url()?>/dashboard/loginactivity">
                 <span data-feather="activity"></span>
                 Login Activity
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=base_url()?>/dashboardmetadescription">
+                <span data-feather="codesandbox"></span>
+                Meta Description
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=base_url()?>/dashboardaudience">
+                <span data-feather="users"></span>
+                Audience
               </a>
             </li>
             <li class="nav-item">
@@ -351,6 +366,18 @@
       filenamaimagebank.readAsDataURL(nameimagebank.files[0]);
       filenamaimagebank.onload = function (e) {
         imgimagebankpreview.src = e.target.result;
+      }
+    }
+
+    function imageaudiencePreview() {
+      const nameimageaudience = document.querySelector('#imageaudience');
+      const namalabelimageaudience = document.querySelector('.custom-file-label');
+      const imgimageaudiencepreview = document.querySelector('.imageaudience-preview');
+      namalabelimageaudience.textContent = nameimageaudience.files[0].name;
+      const filenamaimageaudience = new FileReader();
+      filenamaimageaudience.readAsDataURL(nameimageaudience.files[0]);
+      filenamaimageaudience.onload = function (e) {
+        imgimageaudiencepreview.src = e.target.result;
       }
     }
   </script>

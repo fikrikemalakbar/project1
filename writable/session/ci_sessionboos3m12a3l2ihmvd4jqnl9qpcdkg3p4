@@ -1,2 +1,0 @@
-__ci_last_regenerate|i:1639176415;_ci_previous_url|s:57:"http://localhost:8080/index.php/dashboardtypeatext/create";logged_user|s:32:"f9d1323bebecedcc85e246243c860dcd";logged_info|i:1;_ci_old_input|a:2:{s:3:"get";a:0:{}s:4:"post";a:2:{s:14:"csrf_test_name";s:32:"21f953675ecd71837001e20a79fb0c80";s:9:"typeatext";s:13:"<p>test</p>
-";}}__ci_vars|a:2:{s:13:"_ci_old_input";s:3:"old";s:21:"_ci_validation_errors";s:3:"old";}_ci_validation_errors|s:62:"a:1:{s:9:"texttypea";s:32:"The texttypea field is required.";}";
