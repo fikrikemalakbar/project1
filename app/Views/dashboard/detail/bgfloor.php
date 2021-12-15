@@ -11,7 +11,8 @@
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                    <p class="card-text">Title : <?=$bgfloor['titlebg']?></p>
+                    <p class="card-text">Text A : <?=$bgfloor['titlebg']?></p>
+                    <p class="card-text">Text B : <?=$bgfloor['textb']?></p>
                     <p class="card-text">Name Image : <?=$bgfloor['imagebg']?></p>
                     <p class="card-text">Caption : <?=$bgfloor['captionbg']?></p>
                     <br>

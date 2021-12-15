@@ -67,7 +67,14 @@ class Dashboardcontactperson extends BaseController
                 'errors'=>[
                     'required'=>'Harus DI Isi'
                 ]
-            ]
+                ],
+                'email'=>[
+                    'rules'=>'required|is_unique[contactperson.email]',
+                    'errors'=>[
+                        'required'=>'Harus DI Isi',
+                        'is_unique'=>'Email sudah ada, please ganti email lain'
+                    ]
+                ]
 
         ]))
         {
@@ -80,7 +87,8 @@ class Dashboardcontactperson extends BaseController
             'id'=>$this->request->getVar('id'),
             'wa'=> $this->request->getVar('wa'),
             'ph'=> $this->request->getVar('ph'),
-            'alamat'=> $this->request->getVar('alamat')
+            'alamat'=> $this->request->getVar('alamat'),
+            'email'=> $this->request->getVar('email')
        ]);
        session()->setFlashdata('pesan', 'Data Berhasil di tambahkan');
        return redirect()->to('/dashboardcontactperson');
@@ -133,6 +141,15 @@ class Dashboardcontactperson extends BaseController
         {
             $rule_ph = 'required|is_unique[contactperson.ph]';
         }
+        $emaillama = $this->contactpersonModel->getcontactperson($this->request->getVar('idlama'));
+        if($emaillama['email'] == $this->request->getVar('email'))
+        {
+            $rule_email = 'required';
+        }
+        else
+        {
+            $rule_email = 'required|is_unique[contactperson.email]';
+        }
         if(!$this->validate([
             'wa'=>[
                 'rules'=>$rule_wa,
@@ -153,7 +170,14 @@ class Dashboardcontactperson extends BaseController
                     'errors'=>[
                         'required'=>'Harus DI Isi'
                     ]
-                ]
+                    ],
+                    'email'=>[
+                        'rules'=>$rule_email,
+                        'errors'=>[
+                            'required'=> 'Nomor Telephone Harus Di Isi',
+                            'is_unique'=> 'Nomor Telephone ini sudah ada'
+                        ]
+                        ],
         ]))
         {
             return redirect()->to('/dashboardcontactperson/edit/' . $this->request->getVar('id'))->withInput();
@@ -165,7 +189,8 @@ class Dashboardcontactperson extends BaseController
            'id'=>$id,
            'wa'=> $this->request->getVar('wa'),
            'ph'=> $this->request->getVar('ph'),
-           'alamat'=> $this->request->getVar('alamat')
+           'alamat'=> $this->request->getVar('alamat'),
+           'email'=> $this->request->getVar('email')
       ]);
        session()->setFlashdata('pesan', 'Data Berhasil di Edit');
        return redirect()->to('/dashboardcontactperson');

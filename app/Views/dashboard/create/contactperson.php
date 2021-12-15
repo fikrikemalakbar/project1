@@ -19,7 +19,7 @@
                         </div>
                     </div>
                     <div class="row mb-3">
-                        <label for="ph" class="col-sm-2 col-form-label">Nomor Whatsapp</label>
+                        <label for="ph" class="col-sm-2 col-form-label">Nomor Telephone</label>
                         <div class="col-sm-10">
                             <input type="ph"
                                 class="form-control <?=($validation->hasError('ph')) ? 'is-invalid' : '';?>" name="ph"
@@ -35,6 +35,17 @@
                            <textarea name="alamat" id="ckeditor" class="ckeditor <?=($validation->hasError('alamat')) ? 'is-invalid' : '';?>"><?=old('alamat');?></textarea>
                             <div class="invalid-feedback">
                                 <?=$validation->getError('alamat');?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="email" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email"
+                                class="form-control <?=($validation->hasError('email')) ? 'is-invalid' : '';?>" name="email"
+                                id="email" value="<?=old('email');?>">
+                            <div class="ivalid-feedback">
+                                <?=$validation->getError('email');?>
                             </div>
                         </div>
                     </div>

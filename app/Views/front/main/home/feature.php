@@ -5,27 +5,50 @@
             <div class="col m6">
                 <div class="row">
                     <div class="col l12">
-                        <img style="width:100%;height:300px;" src="<?=base_url()?>/assets/img/uploadfeature/<?=$f['namefeature']?>" alt="<?=$f['altfeature']?>">
+                        <img style="width:100%;height:300px;"
+                            src="<?=base_url()?>/assets/img/uploadfeature/<?=$f['namefeature']?>"
+                            alt="<?=$f['altfeature']?>">
                     </div>
                     <br>
-                    <div class="col l12">
-                        <a class="btnWa">08546546546544</a>
+                    <?php foreach($contactperson as $cpf) : ?>
+                    <div class="col s12 l12 m12">
+                        <a href="https://api.whatsapp.com/send?phone=<?=$cpf['wa']?>&text=Hallo%20ada%20yang%20bisa%20dibantu" class="btnWa">
+                            <div class="bitzarz">
+                                <i class="fab fa-whatsapp"></i>
+                                <div class="bordeux">
+                                    <?=$cpf['wa']?>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="col l12">
                         <br>
-                        <a style="width:100%;"
-                            class="btnPhone">08546546546544</a>
+                        <a href="tel:<?=$cpf['ph']?>" class="btnPhone">
+                            <div class="bitzarz">
+                            <i class="fas fa-phone-square-alt"></i>
+                                <div class="bordeux">
+                                    <?=$cpf['ph']?>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    <div class="col l12">
+                    <?php endforeach;?>
+                    <div class="col s12 m12 l12">
                         <br>
                         <a href="<?=base_url()?>/assets/img/4.jpg" download style="width:100%;"
-                        class="btnCatalog">Download
-                        Catalogue</a>
+                            class="btnCatalog">
+                            <div class="bitzarz">
+                            <i class="fas fa-file-pdf"></i>
+                                <div class="bordeux">
+                                    Download Catalog
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
             <div class="col m6">
-               <?=$f['featuretext']?>
+                <?=$f['featuretext']?>
             </div>
         </div>
     </div>
@@ -39,21 +62,45 @@
             <div class="row">
                 <div class="col s12">
                     <br>
-                    <img style="width:100%;height:300px;" src="<?=base_url()?>/assets/img/uploadfeature/<?=$f['namefeature']?>" alt="<?=$f['altfeature']?>">
+                    <img style="width:100%;height:300px;"
+                        src="<?=base_url()?>/assets/img/uploadfeature/<?=$f['namefeature']?>"
+                        alt="<?=$f['altfeature']?>">
                 </div>
-                <div class="col s12">
-                    <a  class="btnWa">08546546546544</a>
-                </div>
-                <div class="col s12">
-                    <br>
-                    <a style="width:100%;" class="waves-effect waves-light cyan accent-4 btn-large">08546546546544</a>
-                </div>
-                <div class="col s12">
-                    <br>
-                    <a href="<?=base_url()?>/assets/img/4.jpg" download style="width:100%;"
-                        class="waves-effect waves-light red darken-4 btn-large">Download
-                        Catalogue</a>
-                </div>
+                <?php foreach($contactperson as $cpfm) : ?>
+                    <div class="col s12 l12 m12">
+                        <a href="https://api.whatsapp.com/send?phone=<?=$cpfm['wa']?>&text=Hallo%20ada%20yang%20bisa%20dibantu" class="btnWa">
+                            <div class="bitzarz">
+                                <i class="fab fa-whatsapp"></i>
+                                <div class="bordeux">
+                                    <?=$cpfm['wa']?>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col s12 l12 m12">
+                        <br>
+                        <a href="tel:<?=$cpfm['ph']?>" class="btnPhone">
+                            <div class="bitzarz">
+                            <i class="fas fa-phone-square-alt"></i>
+                                <div class="bordeux">
+                                    <?=$cpfm['ph']?>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                <?php endforeach;?>
+                <div class="col s12 m12 l12">
+                        <br>
+                        <a href="<?=base_url()?>/assets/img/4.jpg" download style="width:100%;"
+                            class="btnCatalog">
+                            <div class="bitzarz">
+                            <i class="fas fa-file-pdf"></i>
+                                <div class="bordeux">
+                                    Download Catalog
+                                </div>
+                            </div>
+                        </a>
+                    </div>
             </div>
         </div>
     </div>

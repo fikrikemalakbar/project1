@@ -17,7 +17,8 @@
             <thead>
                 <tr>
                     <th scope="col">No</th>
-                    <th scope="col">Title</th>
+                    <th scope="col">Text A</th>
+                    <th scope="col">Text B</th>
                     <th scope="col">Image</th>
                     <th scope="col">Caption</th>
                     <th scope="col">Aksi</th>
@@ -31,6 +32,7 @@
                 <tr>
                     <td><?= $i++;?></td>
                     <td><?= $bgf['titlebg']?></td>
+                    <td><?= $bgf['textb']?></td>
                     <td><img class="aroundImage" src="<?=base_url()?>/assets/img/uploadbgfloor/<?=$bgf['imagebg'];?>" alt="<?=$bgf['captionbg'];?>"></td>
                     <td><?=$bgf['captionbg'];?></td>
                     <td>

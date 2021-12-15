@@ -8,7 +8,7 @@ class ContactpersonModel extends Model
 {
     protected $table         = 'contactperson';
     protected $useTimestamps = true;
-    protected $allowedFields = ['wa','ph','alamat','id'];
+    protected $allowedFields = ['wa','ph','alamat','email','id'];
 
     public function getcontactperson($id = false)
     {

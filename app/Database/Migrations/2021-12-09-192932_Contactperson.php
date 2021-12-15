@@ -25,6 +25,11 @@ class Contactperson extends Migration
             'alamat'=>[
                 'type'=>'TEXT'
             ],
+            'email'=>[
+                'type'=>'VARCHAR',
+                'constraint'=>20,
+                'unique'=>true
+            ],
             'created_at DATETIME DEFAULT CURRENT_TIMESTAMP',
             'updated_at DATETIME DEFAULT CURRENT_TIMESTAMP'
         ]);

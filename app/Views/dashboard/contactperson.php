@@ -25,6 +25,9 @@
                 Alamat : <?=$cp['alamat']?>
             </div>
             <div class="col-lg-12">
+                Email : <?=$cp['email']?>
+            </div>
+            <div class="col-lg-12">
                 <a href="/dashboardcontactperson/edit/<?=$cp['id'];?>" class="btn btn-success">Edit</a>
                 <form class="d-inline" action="/dashboardcontactperson/delete/<?=$cp['id'];?>" method="post">
                     <?=csrf_field();?>

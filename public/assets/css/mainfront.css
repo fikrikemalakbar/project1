@@ -6,6 +6,17 @@ html,body{
   margin: 0;
   padding:0;
 }
+.btnEmail{
+  background-color: rgb(55, 158, 199);
+  border: none;
+  color: white;
+ line-height: 3;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  width:100%;
+}
 .btnWa{
   background-color: #4CAF50;
   border: none;
@@ -18,8 +29,8 @@ html,body{
   width:100%;
 }
 .btnPhone{
-  background-color: #4CAF50;
-  border: none;
+ 
+  background-color:  rgb(66,100,149);
   color: white;
  line-height: 3;
   text-align: center;
@@ -29,7 +40,7 @@ html,body{
   width:100%;
 }
 .btnCatalog{
-  background-color: #4CAF50;
+  background-color: #8a1d1d;
   border: none;
   color: white;
  line-height: 3;
@@ -39,331 +50,425 @@ html,body{
   cursor: pointer;
   width:100%;
 }
+/* start modal floor */
 
-/* st floorpl */
+    /* The Modal (background) */
+    .modalfloor {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+  }
 
-.image-row > .image-column {
-    padding: 0 8px;
+  /* Modal Content */
+  .modalfloor-content {
+      position: relative;
+      background-color: black;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
   }
-  
-  .image-row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  .image-column {
-    float: left;
-    width: 50%;
-  }
-  
-  /* The Modal (background) */
-  .image-modal {
-    display: none;
-    /* width: 0;
-    height: 0; */
-    width:auto;
-    height:auto;
-    overflow: hidden;
-    position:fixed;
-    margin: auto;
-    top:0;
-    left:0;
-    background-color: rgba(0, 0, 0, .8);
-    z-index: 9999;
-    transition: .5s;
-    text-align:center;
-    padding:100px 0;
-    bottom: 0;
-    right:0;
-  }
-  
- 
-  .image-modal img{
+  .modalfloor-content img{
+      position: relative;
+   
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      padding: 0;
       max-width: 100%;
-      max-height: 100%;
   }
-  
+
   /* The Close Button */
-  .image-close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
+  .closefloor {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
   }
-  
-  .image-close:hover,
-  .image-close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
+
+  .closefloor:hover,
+  .closefloor:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
   }
-  
-  .image-mySlides {
-    display: none;
+
+  .mySlidesfloor {
+      display: none;
   }
-  
-  .image-cursor {
-    cursor: pointer;
+
+  .cursorfloor {
+      cursor: pointer;
   }
- 
+
   /* Next & previous buttons */
-  .image-prev,
-  .image-next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    /* padding: 16px; */
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+  .prevfloor,
+  .nextfloor {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
   }
-  
+
   /* Position the "next button" to the right */
-  .image-next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  .nextfloor {
+      right: 0;
+      border-radius: 3px 0 0 3px;
   }
-  .image-prev{
-    left:0;
-    border-radius: 3px 0 0 3px;
-  }
-  
+
   /* On hover, add a black background color with a little bit see-through */
-  .image-prev:hover,
-  .image-next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  .prevfloor:hover,
+  .nextfloor:hover {
+      background-color: rgba(0, 0, 0, 0.8);
   }
-  
+
   /* Number text (1/3 etc) */
-  .image-numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  
-  .image-caption-container {
-    text-align: center;
-    background-color: rgba(0, 0, 0, .8);
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .image-demo {
-    opacity: 0.6;
-  }
-  
-  .image-active,
-  .image-demo:hover {
-    opacity: 1;
-  }
-  
-  img.image-hover-shadow {
-    transition: 0.3s;
-  }
-  
-  .image-hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .numbertextfloor {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
   }
 
-/* en floorpl */
 
-/* st third */
 
-.third-row > .third-column {
-    padding: 0 8px;
+  .captionfloor-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
   }
-  
-  .third-row:after {
-    content: "";
-    display: table;
-    clear: both;
+
+  .demofloor {
+      opacity: 0.6;
   }
-  
-  .third-column {
-    float: left;
-    width: 50%;
+
+  .activefloor,
+  .demofloor:hover {
+      opacity: 1;
   }
-  
-  /* The Modal (background) */
-  .third-modal {
-    display: none;
-    /* width: 0;
-    height: 0; */
-    width:auto;
-    height:auto;
-    overflow: hidden;
-    position:fixed;
-    margin: auto;
-    top:0;
-    left:0;
-    background-color: rgba(0, 0, 0, .8);
-    z-index: 9999;
-    transition: .5s;
-    text-align:center;
-    padding:100px 0;
-    bottom: 0;
-    right:0;
+
+  img.hoverfloor-shadowfloor {
+      transition: 0.3s;
   }
-  
- 
-  .third-modal img{
+
+  .hoverfloor-shadowfloor:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+/* end modal floor */
+
+
+/* start floor two modal */
+
+
+    /* The Modal (background) */
+    .modalfloortwo {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+  }
+
+  /* Modal Content */
+  .modalfloortwo-content {
+      position: relative;
+      background-color: black;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+  }
+  .modalfloortwo-content img{
+      position: relative;
+   
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      padding: 0;
       max-width: 100%;
-      max-height: 100%;
   }
-  
+
   /* The Close Button */
-  .third-close {
-    color: white;
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    font-size: 35px;
-    font-weight: bold;
+  .closefloortwo {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
   }
-  
-  .third-close:hover,
-  .third-close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
+
+  .closefloortwo:hover,
+  .closefloortwo:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
   }
-  
-  .third-mySlides {
-    display: none;
+
+  .mySlidesfloortwo {
+      display: none;
   }
-  
-  .third-cursor {
-    cursor: pointer;
+
+  .cursorfloortwo {
+      cursor: pointer;
   }
-  
+
   /* Next & previous buttons */
-  .third-prev,
-  .third-next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    /* padding: 16px; */
-    margin-top: -50px;
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
+  .prevfloortwo,
+  .nextfloortwo {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
   }
-  
+
   /* Position the "next button" to the right */
-  .third-next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
+  .nextfloortwo {
+      right: 0;
+      border-radius: 3px 0 0 3px;
   }
-  .third-prev{
-    left:0;
-    border-radius: 3px 0 0 3px;
-  }
-  
+
   /* On hover, add a black background color with a little bit see-through */
-  .third-prev:hover,
-  .third-next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+  .prevfloortwo:hover,
+  .nextfloortwo:hover {
+      background-color: rgba(0, 0, 0, 0.8);
   }
-  
+
   /* Number text (1/3 etc) */
-  .third-numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-  
-  
-  .third-caption-container {
-    text-align: center;
-    background-color: rgba(0, 0, 0, .8);
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .third-demo {
-    opacity: 0.6;
-  }
-  
-  .third-active,
-  .third-demo:hover {
-    opacity: 1;
-  }
-  
-  img.third-hover-shadow {
-    transition: 0.3s;
-  }
-  
-  .third-hover-shadow:hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .numbertextfloortwo {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
   }
 
-/* en third */
 
-/* st glr */
 
-.gallery-row > .gallery-column {
-  padding: 0 8px;
-}
+  .captionfloortwo-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+  }
 
-.gallery-row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+  .demofloortwo {
+      opacity: 0.6;
+  }
 
-.gallery-column {
-  float: left;
-  width: 25%;
-}
+  .activefloortwo,
+  .demofloortwo:hover {
+      opacity: 1;
+      
+  }
 
-/* The Modal (background) */
-.gallery-modal {
+  img.hoverfloortwo-shadowfloortwo {
+      transition: 0.3s;
+  }
+
+  .hoverfloortwo-shadowfloortwo:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/* end floow two modal */
+
+/* start modal gallery */
+
+    /* The Modal (background) */
+    .modalgallery {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      padding-top: 100px;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: black;
+  }
+
+  /* Modal Content */
+  .modalgallery-content {
+      position: relative;
+      background-color: black;
+      margin: auto;
+      padding: 0;
+      width: 90%;
+      max-width: 1200px;
+  }
+  .modalgallery-content img{
+      position: relative;
+   
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      padding: 0;
+      max-width: 100%;
+  }
+
+  /* The Close Button */
+  .closegallery {
+      color: white;
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      font-size: 35px;
+      font-weight: bold;
+  }
+
+  .closegallery:hover,
+  .closegallery:focus {
+      color: #999;
+      text-decoration: none;
+      cursor: pointer;
+  }
+
+  .mySlidesgallery {
+      display: none;
+  }
+
+  .cursorgallery {
+      cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prevgallery,
+  .nextgallery {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .nextgallery {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prevgallery:hover,
+  .nextgallery:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertextgallery {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+  }
+
+
+
+  .captiongallery-container {
+      text-align: center;
+      background-color: black;
+      padding: 2px 16px;
+      color: white;
+  }
+
+  .demogallery {
+      opacity: 0.6;
+  }
+
+  .activegallery,
+  .demogallery:hover {
+      opacity: 1;
+      
+  }
+
+  img.hovergallery-shadowgallery {
+      transition: 0.3s;
+  }
+
+  .hovergallery-shadowgallery:hover {
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+/* end modal gallery */
+
+/* start site plan modal  */
+.modalsite {
   display: none;
-  /* width: 0;
-  height: 0; */
-  width:auto;
-  height:auto;
-  overflow: hidden;
-  position:fixed;
-  margin: auto;
-  top:0;
-  left:0;
-  background-color: rgba(0, 0, 0, .8);
-  z-index: 9999;
-  transition: .5s;
-  text-align:center;
-  padding:100px 0;
-  bottom: 0;
-  right:0;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
 }
 
+/* Modal Content */
+.modalsite-content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+.modalsite-content img{
+  position: relative;
 
-.gallery-modal img{
-    max-width: 100%;
-    max-height: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+  max-width: 100%;
 }
 
 /* The Close Button */
-.gallery-close {
+.closesite {
   color: white;
   position: absolute;
   top: 10px;
@@ -372,29 +477,29 @@ html,body{
   font-weight: bold;
 }
 
-.gallery-close:hover,
-.gallery-close:focus {
+.closesite:hover,
+.closesite:focus {
   color: #999;
   text-decoration: none;
   cursor: pointer;
 }
 
-.gallery-mySlides {
+.mySlidessite {
   display: none;
 }
 
-.gallery-cursor {
+.cursorsite {
   cursor: pointer;
 }
 
 /* Next & previous buttons */
-.gallery-prev,
-.gallery-next {
+.prevsite,
+.nextsite {
   cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
-  /* padding: 16px; */
+  padding: 16px;
   margin-top: -50px;
   color: white;
   font-weight: bold;
@@ -406,23 +511,19 @@ html,body{
 }
 
 /* Position the "next button" to the right */
-.gallery-next {
+.nextsite {
   right: 0;
-  border-radius: 3px 0 0 3px;
-}
-.gallery-prev{
-  left:0;
   border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.gallery-prev:hover,
-.gallery-next:hover {
+.prevsite:hover,
+.nextsite:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Number text (1/3 etc) */
-.gallery-numbertext {
+.numbertextsite {
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
@@ -431,47 +532,158 @@ html,body{
 }
 
 
-.gallery-caption-container {
+
+.captionsite-container {
   text-align: center;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: black;
   padding: 2px 16px;
   color: white;
 }
 
-.gallery-demo {
+.demosite {
   opacity: 0.6;
 }
 
-.gallery-active,
-.gallery-demo:hover {
+.activesite,
+.demosite:hover {
   opacity: 1;
+  
 }
 
-img.gallery-hover-shadow {
+img.hoversite-shadowsite {
   transition: 0.3s;
 }
 
-.gallery-hover-shadow:hover {
+.hoversite-shadowsite:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-/* en glr */
+/* end site plan modal */
 
-
-
-.section {
-    /* position: absolute;
-    top:81%; */
-    width: 100%;
-    font-size: 20px;
-    font-weight: 700;
-    color: #F8CD96;
+/* start modal marketing */
+.modalmarketing {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
 }
 
-.section a {
-    color: black;
+/* Modal Content */
+.modalmarketing-content {
+  position: relative;
+  background-color: black;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+.modalmarketing-content img{
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+  max-width: 100%;
 }
 
+/* The Close Button */
+.closemarketing {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.closemarketing:hover,
+.closemarketing:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlidesmarketing {
+  display: none;
+}
+
+.cursormarketing {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prevmarketing,
+.nextmarketing {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextmarketing {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevmarketing:hover,
+.nextmarketing:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertextmarketing {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+.captionmarketing-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demomarketing {
+  opacity: 0.6;
+}
+
+.activemarketing,
+.demomarketing:hover {
+  opacity: 1;
+  
+}
+
+img.hovermarketing-shadowmarketing {
+  transition: 0.3s;
+}
+
+.hovermarketing-shadowmarketing:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* end modal marketing */
 main {
     margin-top:100px;
 
@@ -505,70 +717,292 @@ main {
     font-weight: 400;
     font-size: 15px;
 }
-img .imageFloor{
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height:100%;
-}
-/* .filter {
-    -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px); 
-    -webkit-backdrop-filter: contrast(100%);
-    backdrop-filter: contrast(100%);
-    background-color: rgba(21, 3, 49, 0.5);
-    height: 600px;
-} */
-.floorplanMain {
-    
-    background-color:  rgba(21, 3, 49, 0.5);
-    /* height:100vh; */
-    height:60%;
-}
-.floorBuai{
-    padding-top: 50px;
-}
-.floorplanHeader {
-    justify-content: center;
-    display: flex;
-    text-align: center;
-}
-.thirdTitle{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    font-weight: 700;
-    font-size: 23px;
-    color:#4054B2;
+
+
+.floorOne {
+  /* background-color: rgba(21, 3, 49, 0.5); */
+  background-color: rgba(66, 100, 149, 0.8);
 }
 
-.galleryMain{
-    background-color:  rgba(21, 3, 49, 0.5);
-    /* height:100vh; */
-    height:60%;
+.floorTwo {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: -20px;
 }
-.galleryBuai{
-    padding-top:50px;
+
+.floorthree {
+  /* background-color: rgba(21, 3, 49, 0.5); */
+  background-color: rgba(66, 100, 149, 0.8);
+  margin-top: -20px;
 }
-.galleryHeader{
-    display:flex;
-    justify-content: center;
+
+.floorthreeheader {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 22px;
 }
-.galleryTitle{
-    color:white;
-    font-size:23px;
-    font-weight:700;
+.sitedesktop{
+  display:block;
+}
+.sitemobile{
+  display:none;
 }
 iframe{
   max-width:100%;
 }
-.hubungiTitlw{
+.hubungiTitle{
+  font-weight: 600;
+  font-size:20px;
   display: flex;
   justify-content: center;
 }
+.person{
+  display:flex;
+  justify-content: center;
+}
+ .contact{
+  font-weight: 700;
+}
+.bitzarz{
+  display: flex;
+  justify-content: center;
+  padding-right:20px;
+  padding-left:20px;
+  line-height: 3;
+  align-items: center;
+  margin: 0 auto;
+}
+.bitzarz i{
+  margin-right: auto;
+}
+.bordeux{
+margin: auto;
+}
+.footer{
+  background-color: black;
+}
+.footertitle{
+  color:white;
+  display: flex;
+  justify-content: center;
+}
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}     
 @media only screen and (max-width: 600px) {
+  .sitedesktop{
+    display:none;
+  }
+  .sitemobile{
+    display: block;
+  }
+  .sitemobileheader{
+    background-color: rgba(66, 100, 149, 0.8);
+    padding: 30px;
+  }
+  .sitemobiletitle{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    font-size: 22px;
+  }
+.mapsmobileheader{
+  padding:30px;
+  background-color: #F2F2F2;
+}
+.mapsmobiletitle{
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+  color: blue;
+  font-size: 22px;
+}
+  /* start modal site mobile */
+  .modalsitemobile {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+}
+
+/* Modal Content */
+.modalsitemobile-content {
+    position: relative;
+    background-color: black;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+}
+.modalsitemobile-content img{
+    position: relative;
+ 
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* The Close Button */
+.closesitemobile {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.closesitemobile:hover,
+.closesitemobile:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mySlidessitemobile {
+    display: none;
+}
+
+.cursorsitemobile {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prevsitemobile,
+.nextsitemobile {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.nextsitemobile {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevsitemobile:hover,
+.nextsitemobile:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertextsitemobile {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+
+.captionsitemobile-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+}
+
+.demositemobile {
+    opacity: 0.6;
+}
+
+.activesitemobile,
+.demositemobile:hover {
+    opacity: 1;
+    
+}
+
+img.hoversitemobile-shadowsitemobile {
+    transition: 0.3s;
+}
+
+.hoversitemobile-shadowsitemobile:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+  /* end modal site mobile */
     .featureDesktop {
         display: none;
     }
@@ -584,9 +1018,6 @@ iframe{
     .overlaping{
         padding-right:30px;
         padding-left:30px;
-    }
-    .gallery-column{
-      width:50%;
     }
 }
 

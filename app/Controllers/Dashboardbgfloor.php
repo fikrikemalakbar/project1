@@ -89,7 +89,13 @@ class Dashboardbgfloor extends BaseController
                     'errors'=>[
                         'required'=> 'title harus di isi , tidak boleh kosong',
                     ]
-                ]
+                    ],
+                    'textb'=>[
+                        'rules'=>'required',
+                        'errors'=>[
+                            'required'=> 'title harus di isi , tidak boleh kosong',
+                        ]
+                    ]
         ]))
         {
              return redirect()->to('/dashboardbgfloor/create')->withInput();
@@ -110,6 +116,7 @@ class Dashboardbgfloor extends BaseController
            'slugbg' => $slugbg,
            'imagebg' => $namabgfloorimage,
            'titlebg' => $this->request->getVar('titlebg'),
+           'textb' => $this->request->getVar('textb'),
            'captionbg' => $this->request->getVar('captionbg'),
        ]);
        session()->setFlashdata('pesan', 'Data Berhasil di tambahkan');
@@ -181,7 +188,13 @@ class Dashboardbgfloor extends BaseController
                         'errors'=>[
                             'required'=> 'title harus di isi , tidak boleh kosong',
                         ]
-                    ]
+                        ],
+                        'textb'=>[
+                            'rules'=>'required',
+                            'errors'=>[
+                                'required'=> 'title harus di isi , tidak boleh kosong',
+                            ]
+                        ]
         ]))
         {
        
@@ -201,6 +214,7 @@ class Dashboardbgfloor extends BaseController
            'id' => $id,
            'captionbg' => $this->request->getVar('captionbg'),
            'titlebg' => $this->request->getVar('titlebg'),
+           'textb' => $this->request->getVar('textb'),
            'slugbg' => $slugbg,
            'imagebg' => $nameimagebg,
        ]);

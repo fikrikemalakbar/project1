@@ -8,7 +8,7 @@ class BgfloorModel extends Model
 {
     protected $table         = 'backgroundfloorplan';
     protected $useTimestamps = true;
-    protected $allowedFields = ['titlebg','imagebg','captionbg','slugbg'];
+    protected $allowedFields = ['titlebg','textb','imagebg','captionbg','slugbg'];
 
     public function getbgfloor($slugbg = false)
     {

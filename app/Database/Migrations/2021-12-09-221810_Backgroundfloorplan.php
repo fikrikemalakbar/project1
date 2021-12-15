@@ -17,6 +17,10 @@ class Backgroundfloorplan extends Migration
             'titlebg'=>[
                 'type'=>'TEXT'
             ],
+            'textb'=>[
+                'type'=>'TEXT'
+            ],
+            
             'imagebg'=>[
                 'type'=>'VARCHAR',
                 'constraint'=>225

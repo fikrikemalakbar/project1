@@ -8,13 +8,24 @@
                 <form action="/dashboardbgfloor/save" method="post" enctype="multipart/form-data">
                     <?=csrf_field();?>
                     <div class="row mb-3">
-                        <label for="titlebg" class="col-sm-2 col-form-label">Title</label>
+                        <label for="titlebg" class="col-sm-2 col-form-label">Text A</label>
                         <div class="col-sm-10">
                            <textarea name="titlebg" id="ckeditor" class="ckeditor <?=($validation->hasError('titlebg')) ? 'is-invalid' : '';?>" >
                            <?=old('titlebg');?>
                             </textarea>
                             <div class="invalid-feedback">
                                 <?=$validation->getError('titlebg');?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <label for="textb" class="col-sm-2 col-form-label">Text B</label>
+                        <div class="col-sm-10">
+                           <textarea name="textb" id="ckeditor" class="ckeditor <?=($validation->hasError('textb')) ? 'is-invalid' : '';?>" >
+                           <?=old('textb');?>
+                            </textarea>
+                            <div class="invalid-feedback">
+                                <?=$validation->getError('textb');?>
                             </div>
                         </div>
                     </div>

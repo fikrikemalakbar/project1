@@ -6,6 +6,7 @@
 <br>
 <?=$this->include('front/main/home/floorplan')?>
 <br>
-
+<?=$this->include('front/main/home/siteplan')?>
+<br>
 <?=$this->include('front/main/home/Hubungikami')?>
 <?=$this->endSection()?>
