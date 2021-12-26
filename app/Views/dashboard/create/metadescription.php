@@ -10,7 +10,7 @@
                     <div class="row mb-3">
                         <div class="col-sm-10">
                             <label for="metadescription" class="col-sm-2 col-form-label">Meta Description</label>
-                            <textarea name="metadescription" id="metadescription" class="form-control <?=($validation->hasError('metadescription')) ? 'is-invalid' : '';?>"style="height:100px;">
+                            <textarea  name="metadescription" id="metadescription" class="form-control <?=($validation->hasError('metadescription')) ? 'is-invalid' : '';?>"style="height:100px;">
                                      <?=old('metadescription');?>
                             </textarea>
                             <div class="invalid-feedback">
@@ -24,4 +24,7 @@
         </div>
     </div>
 </main>
+<script>
+
+</script>
 <?=$this->endSection();?>

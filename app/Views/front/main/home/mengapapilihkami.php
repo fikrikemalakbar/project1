@@ -1,7 +1,7 @@
-<div class="whyChoice">
+<div id="mengapa"class="whyChoice">
     <div class="titleWC">
         <div class="row">
-            Mengapa Pilih Kami
+           <strong> Mengapa Pilih Kami</strong>
         </div>
     </div>
     <div class="row">
@@ -12,7 +12,7 @@
                     <i style="font-size:50px;color:blue" class="fas fa-home"></i>
                     </div>
                     <div class="col s9">
-                        Free All in Terima Beres
+                        <strong>Free All in Terima Beres</strong>
                     </div>
                 </div>
             </div>
@@ -22,7 +22,7 @@
                     <i style="font-size:50px;color:blue" class="fas fa-university"></i>
                     </div>
                     <div class="col s9">
-                        Free BI KPR
+                        <strong>Free BI KPR</strong>
                     </div>
                 </div>
             </div>
@@ -32,7 +32,7 @@
                     <i style="font-size:50px;color:blue" class="fas fa-check-circle"></i>
                     </div>
                     <div class="col s9">
-                        Free BI BPHTB
+                        <strong>Free BI BPHTB</strong>
                     </div>
                 </div>
             </div>
@@ -42,7 +42,7 @@
                     <i style="font-size:50px;color:blue" class="fas fa-file-signature"></i>
                     </div>
                     <div class="col s9">
-                    Free Balik Nama Sertifikat Surat SHM
+                    <strong>Free Balik Nama Sertifikat Surat SHM</strong>
                     </div>
                 </div>
             </div>

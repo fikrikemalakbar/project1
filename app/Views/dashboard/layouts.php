@@ -13,9 +13,10 @@
   <link href="<?=base_url()?>/assets/bootstrap-5.1.3-examples/assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
-    .sidebar{
+    .sidebar {
       overflow-y: scroll;
     }
+
     .bd-placeholder-img {
       font-size: 1.125rem;
       text-anchor: middle;
@@ -100,6 +101,12 @@
               </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="<?=base_url()?>/dashboardmetakeyword">
+                <span data-feather="codesandbox"></span>
+                Meta keyword
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="<?=base_url()?>/dashboardaudience">
                 <span data-feather="users"></span>
                 Audience
@@ -124,23 +131,52 @@
               </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>/dashboardmarketing">
-                  <span data-feather="image"></span>
-                  Marketing Gallerty
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>/dashboardbank">
-                  <span data-feather="dollar-sign"></span>
-                  Bank
-                </a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<?=base_url()?>/dashboardbgfloor">
-                <span data-feather="crop"></span>
-                Background FloorGallery
+              <a class="nav-link" href="<?=base_url()?>/dashboardmarketing">
+                <span data-feather="image"></span>
+                Marketing Gallerty
               </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=base_url()?>/dashboardbank">
+                <span data-feather="dollar-sign"></span>
+                Bank
+              </a>
+            </li>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button bg-light collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div class="nav-item">
+                      <div style="font-size:15px;" class="nav-link">Background Image</div>
+                    </div>
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?=base_url()?>/dashboardheader">
+                        <span data-feather="corner-down-right"></span>
+                        Header
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?=base_url()?>/dashboardbgfloor">
+                        <span data-feather="corner-down-right"></span>
+                        floor plan
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?=base_url()?>/dashboardbackgroundsiteplan">
+                        <span data-feather="corner-down-right"></span>
+                        Site Plan
+                      </a>
+                    </li>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="accordion-item">
                 <h2 class="accordion-header" id="flush-headingOne">
@@ -154,24 +190,24 @@
                 <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
                   data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                  <li class="nav-item">
-                  <a class="nav-link" href="<?=base_url()?>/dashboardtypeahero">
-                    <span data-feather="corner-down-right"></span>
-                    Type A Hero
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?=base_url()?>/dashboardtypeachild">
-                    <span data-feather="corner-down-right"></span>
-                    Type A Child
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?=base_url()?>/dashboardtypeatext">
-                    <span data-feather="corner-down-right"></span>
-                    Type A Text
-                  </a>
-                </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?=base_url()?>/dashboardtypeahero">
+                        <span data-feather="corner-down-right"></span>
+                        Type A Hero
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?=base_url()?>/dashboardtypeachild">
+                        <span data-feather="corner-down-right"></span>
+                        Type A Child
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?=base_url()?>/dashboardtypeatext">
+                        <span data-feather="corner-down-right"></span>
+                        Type A Text
+                      </a>
+                    </li>
                   </div>
                 </div>
               </div>
@@ -187,40 +223,40 @@
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
                   data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                  <li class="nav-item">
-                  <a class="nav-link" href="<?=base_url()?>/dashboardtypebhero">
-                    <span data-feather="corner-down-right"></span>
-                    Type B Hero
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?=base_url()?>/dashboardtypebchild">
-                    <span data-feather="corner-down-right"></span>
-                    Type B Child
-                  </a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="<?=base_url()?>/dashboardtypebtext">
-                    <span data-feather="corner-down-right"></span>
-                    Type B Text
-                  </a>
-                </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?=base_url()?>/dashboardtypebhero">
+                        <span data-feather="corner-down-right"></span>
+                        Type B Hero
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?=base_url()?>/dashboardtypebchild">
+                        <span data-feather="corner-down-right"></span>
+                        Type B Child
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="<?=base_url()?>/dashboardtypebtext">
+                        <span data-feather="corner-down-right"></span>
+                        Type B Text
+                      </a>
+                    </li>
                   </div>
                 </div>
               </div>
             </div>
             <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>/dashboardsiteplan">
-                  <span data-feather="layout"></span>
-                  Site Plan
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="<?=base_url()?>/dashboard/logout">
-                  <span data-feather="log-out"></span>
-                  sign-out
-                </a>
-              </li>
+              <a class="nav-link" href="<?=base_url()?>/dashboardsiteplan">
+                <span data-feather="layout"></span>
+                Site Plan
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<?=base_url()?>/dashboard/logout">
+                <span data-feather="log-out"></span>
+                sign-out
+              </a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -308,6 +344,7 @@
         imgbchildpreview.src = e.target.result;
       }
     }
+
     function bgfloorPreview() {
       const namebgfloor = document.querySelector('#imagebg');
       const namalabelbgfloor = document.querySelector('.custom-file-label');
@@ -356,7 +393,7 @@
       }
     }
 
-    
+
     function imagebankPreview() {
       const nameimagebank = document.querySelector('#imagebank');
       const namalabelimagebank = document.querySelector('.custom-file-label');
@@ -378,6 +415,30 @@
       filenamaimageaudience.readAsDataURL(nameimageaudience.files[0]);
       filenamaimageaudience.onload = function (e) {
         imgimageaudiencepreview.src = e.target.result;
+      }
+    }
+
+    function imageheaderPreview() {
+      const nameimageheader = document.querySelector('#imageheader');
+      const namalabelimageheader = document.querySelector('.custom-file-label');
+      const imgimageheaderpreview = document.querySelector('.imageheader-preview');
+      namalabelimageheader.textContent = nameimageheader.files[0].name;
+      const filenamaimageheader = new FileReader();
+      filenamaimageheader.readAsDataURL(nameimageheader.files[0]);
+      filenamaimageheader.onload = function (e) {
+        imgimageheaderpreview.src = e.target.result;
+      }
+    }
+
+    function imagebackgroundsiteplanPreview() {
+      const nameimagebackgroundsiteplan = document.querySelector('#imagebackgroundsiteplan');
+      const namalabelimagebackgroundsiteplan = document.querySelector('.custom-file-label');
+      const imgimagebackgroundsiteplanpreview = document.querySelector('.imagebackgroundsiteplan-preview');
+      namalabelimagebackgroundsiteplan.textContent = nameimagebackgroundsiteplan.files[0].name;
+      const filenamaimagebackgroundsiteplan = new FileReader();
+      filenamaimagebackgroundsiteplan.readAsDataURL(nameimagebackgroundsiteplan.files[0]);
+      filenamaimagebackgroundsiteplan.onload = function (e) {
+        imgimagebackgroundsiteplanpreview.src = e.target.result;
       }
     }
   </script>

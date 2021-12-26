@@ -9,28 +9,32 @@
     <div class="container">
         <div class="row">
             <div class="col l12">
-                <div class="row">
-              
-                    <div class="col l3">
-                    <?php foreach($bank as $bank) : ?>
-                        <div class="mySlides fade">
-                            <img style="width:600px;height:300px;"
-                                src="<?=base_url()?>/assets/img/upload/<?=$bank['imagebank']?>"
-                                alt="<?=$bank['captionbank']?>" style="width:100%">
+                <div id="categories" class="section">
+                    <div class="slider-wrapper">
+                        <div class="slider items">
+                            <div class="wrapper">
+                                <?php foreach ($bank as $bnk) : ?>
+                                <div class="item slide category">
+                                    <figure>
+                                        <img style="max-width:100%" src="<?=base_url()?>/assets/img/upload/<?=$bnk['imagebank']?>"
+                                            alt="<?=$bnk['captionbank']?>" />
+                                    </figure>
+                                </div>
+                                <?php endforeach;?>
+                            </div>
                         </div>
-                        
-                    <?php endforeach;?>
+                        <nav>
+                            <div class="left disabled">
+                                <i class="fas fa-chevron-left"></i>
+                            </div>
+                            <div class="right"><i class="fas fa-chevron-right"></i></div>
+                        </nav>
                     </div>
                 </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                    <span class="dot"></span>
-                </div>
-
             </div>
         </div>
+    </div>
+    <div class="footer-bottom">
+        copyright &copy; 2021 Ardena Residence
     </div>
 </div>

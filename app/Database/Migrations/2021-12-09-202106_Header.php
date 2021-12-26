@@ -14,7 +14,7 @@ class Header extends Migration
                 'unsigneed'=>true,
                 'auto_increment'=>true
             ],
-            'backgroundheader'=>[
+            'imageheader'=>[
                 'type'=>'VARCHAR',
                 'constraint'=>225
             ],
@@ -23,8 +23,7 @@ class Header extends Migration
                 'constraint'=>225
             ],
             'titleheader'=>[
-                'type'=>'VARCHAR',
-                'constraint'=>225
+                'type'=>'TEXT',
             ],
             'created_at DATETIME DEFAULT CURRENT_TIMESTAMP',
             'updated_at DATETIME DEFAULT CURRENT_TIMESTAMP'

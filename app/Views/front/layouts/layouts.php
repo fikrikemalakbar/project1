@@ -5,73 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
+    <?php foreach($metadescription as $metd) : ?>
+    <meta name="description" content="<?=$metd['metadescription'];?>">
+    <?php endforeach;?>
+    <?php foreach ($metakeyword as $metk) : ?>
+  <meta name="keywords" content="<?=$metk['metakeyword']?>">
+  <?php endforeach;?>
+  <meta name="author" content="fanzy" />
+<meta image="<?=base_url()?>/assets/img/1.jpg">
+<meta property="og:type" content="article">
+<meta property="og:image" content="<?=base_url()?>/assets/img/1.jpg">
+
+<meta property="og:title" content="<?=$title;?>">
+
+<meta property="og:site_name" content="Ardena residence">
+<meta property="og:url" content="https://buildwithangga.com/">
+<?php foreach($metadescription as $mettd) : ?>
+<meta property="og:description" content="<?=$mettd['metadescription']?>">
+<?php endforeach;?>
     <link rel="stylesheet" href="<?=base_url()?>/assets/fontawesome/css/all.min.css">
     <link type="text/css" rel="stylesheet" href="<?=base_url()?>/assets/css/mainfront.css" />
-    <title>cluster</title>
+    <link rel="icon" type="image/png/ico" href="<?=base_url()?>/assets/img/icon/favicon.ico" />
+<link rel="apple-touch-icon" href="<?=base_url()?>/assets/img/icon/favicon.ico">
+    <title><?=$title?></title>
     <style>
         
-<?php foreach($bgfloor as $bgfl) : ?>
+<?php foreach($header as $hid) : ?>
 .bgimgHeader {
   position: relative;
-  opacity: 0.4;
+  opacity: 1;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  
-}
-.bgimgHeader {
-  background-image: url(/assets/img/uploadbgfloor/<?=$bgfl['imagebg']?>);
+  background-image: url(/assets/img/upload/<?=$hid['imageheader']?>);
   height: 100vh;
   max-width: 100%;
   
 }
-.captionHeader {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-  overflow-y: hidden;
-}
-.headerMain{
-    position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-  overflow-y: hidden;
-  display: flex;
-  justify-content: center;
-}
-.headerButton{
-  position: absolute;
-  left: 0;
-  top: 99%;
-  width: 100%;
-  text-align: center;
-  color: #000;
-  overflow-y: hidden!important;
-  background-color:#0F3C7C;
-  padding-top:10px;
-}
-.btnLight{
-    background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
 
 <?php endforeach;?>
 
@@ -81,19 +52,35 @@
 <body>
     <header>
         <div class="bgimgHeader">
-        </div>
         <div class="headerMain">
             <div class="row">
-                <div style="font-size:18px;font-weight:700;color:#4054B2;" class="col l12">
-                Miliki Rumah Idaman dengan Proses Cepat & Mudah. Uang Muka Ringan dan Jangka Waktu Kredit hingga 30 Tahun
-                </div>
+              <?php foreach ($header as $hlo) : ?>
+                <div  class="col l12">
+                  <div class="titleheader">  
+                    <?=$hlo['titleheader']?>
+                  </div>
+                <?php endforeach;?>
+            </div>
+            <div class="col s12">
+              <div class="truehaderimg">
+                <img style="max-width:100%" src="/assets/img/1.jpg" alt="header background">
+              </div>
+            </div>
+            <div class="col s12">
+              <div class="mengapaheader">
+              <a href="#mengapa" class="btnkenapa">Lihat Selengkapnya</a>
+              </div>
             </div>
         </div>
+        </div>
+       
         <div class="headerButton">
             <div class="container">
                 <div class="row">
                     <div class="col l4 offset-l2 col m12 col sm12">
-                    Segera Dapatkan Informasi Lebih Lengkap
+                        <div class="headerbuttonava">
+                        Segera Dapatkan Informasi Lebih Lengkap
+                        </div>
                     </div>
                     <div class="col l6 col m12 col sm12">
                    <a href="#kontakkami" class="btnLight" href="">Hubungi Kami</a>

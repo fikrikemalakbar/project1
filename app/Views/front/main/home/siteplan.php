@@ -1,4 +1,4 @@
-<?php foreach ($bgfloor as $sbg) : ?>
+<?php foreach ($backgroundsiteplan as $sbg) : ?>
 <style>
     .siteplanbackground {
         position: relative;
@@ -9,7 +9,7 @@
     }
 
     .siteplanbackground {
-        background-image: url(/assets/img/uploadbgfloor/<?=$sbg['imagebg']?>);
+        background-image: url(/assets/img/upload/<?=$sbg['imagebackgroundsiteplan']?>);
         max-height: 100%;
         max-width: 100%;
     }
@@ -64,9 +64,11 @@
                 <div class="sitetitle">
                     <div class="container">
                         <div class="row">
+                            <?php foreach($backgroundsiteplan as $sitetext) : ?>
                             <div class="col l12">
-                                Site Plan
+                                <?=$sitetext['titlebackgroundsiteplan']?>
                             </div>
+                            <?php endforeach;?>
                         </div>
                         <div class="row">
                             <?php $q=1;?>

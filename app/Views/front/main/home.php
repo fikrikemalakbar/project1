@@ -9,4 +9,5 @@
 <?=$this->include('front/main/home/siteplan')?>
 <br>
 <?=$this->include('front/main/home/Hubungikami')?>
+<?=$this->include('front/main/home/contactwhatsap')?>
 <?=$this->endSection()?>

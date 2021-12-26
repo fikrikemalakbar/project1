@@ -1,6 +1,9 @@
 <?php
 
 namespace App\Controllers;
+
+use App\Database\Migrations\Backgroundsiteplan;
+use App\Database\Migrations\Metadescription;
 use App\Models\Feature;
 use App\Models\TypeaheroModel;
 use App\Models\TypeachildModel;
@@ -14,7 +17,10 @@ use App\Models\SiteplanModel;
 use App\Models\MarketingModel;
 use App\Models\ContactpersonModel;
 use App\Models\BankModel;
-
+use App\Models\MetadescriptionModel;
+use App\Models\MetakeywordModel;
+use App\Models\BackgroundsiteplanModel;
+use App\Models\HeaderModel;
 class Home extends BaseController
 {
     public function __construct()
@@ -32,6 +38,10 @@ class Home extends BaseController
         $this->marketingnModel = new MarketingModel();
         $this->contactpersonModel = new ContactpersonModel();
         $this->bankModel = new BankModel();
+        $this->metadescriptionModel = new MetadescriptionModel();
+        $this->metakeywordModel = new MetakeywordModel();
+        $this->backgroundsiteplanModel =  new BackgroundsiteplanModel();
+        $this->headerModel =  new HeaderModel();
     }
     public function index()
     {
@@ -49,7 +59,11 @@ class Home extends BaseController
             'siteplan'=>$this->siteplanModel->getsiteplan(),
             'marketing'=>$this->marketingnModel->getmarketing(),
             'contactperson'=>$this->contactpersonModel->getcontactperson(),
-            'bank'=>$this->bankModel->getbank()
+            'bank'=>$this->bankModel->getbank(),
+            'metadescription'=>$this->metadescriptionModel->getmetadescription(),
+            'metakeyword'=>$this->metakeywordModel->getmetakeyword(),
+            'backgroundsiteplan'=>$this->backgroundsiteplanModel->getbackgroundsiteplan(),
+            'header'=>$this->headerModel->getheader(),
         ];
         return view('front/main/home',$data);
     }

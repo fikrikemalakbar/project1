@@ -35,7 +35,7 @@ class BaseController extends Controller
      *
      * @var array
      */
-    protected $helpers = [];
+    protected $helpers = ['form'];
 
     /**
      * Constructor.
@@ -49,5 +49,6 @@ class BaseController extends Controller
 
         // E.g.: $this->session = \Config\Services::session();
         session();
+        
     }
 }

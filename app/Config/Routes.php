@@ -116,6 +116,25 @@ $routes->get('/dashboardaudience/create', 'Dashboardaudience::create');
 $routes->get('/dashboardaudience/edit/(:segment)', 'Dashboardaudience::edit/$1');
 $routes->delete('/dashboardaudience/(:num)', 'Dashboardaudience::delete/$1');
 
+//meta Keyword
+$routes->get('/dashboardmetakeyword', 'Dashboardmetakeyword::index');
+$routes->get('/dashboardmetakeyword/create', 'Dashboardmetakeyword::create');
+$routes->get('/dashboardmetakeyword/edit/(:segment)', 'Dashboardmetakeyword::edit/$1');
+$routes->delete('/dashboardmetakeyword/(:num)', 'Dashboardmetakeyword::delete/$1');
+
+//meta Header
+$routes->get('/dashboardheader', 'Dashboardheader::index');
+$routes->get('/dashboardheader/create', 'Dashboardheader::create');
+$routes->get('/dashboardheader/edit/(:segment)', 'Dashboardheader::edit/$1');
+$routes->delete('/dashboardheader/(:num)', 'Dashboardheader::delete/$1');
+
+//meta background site plan
+$routes->get('/dashboardbackgroundsiteplan', 'Dashboardbackgroundsiteplan::index');
+$routes->get('/dashboardbackgroundsiteplan/create', 'Dashboardbackgroundsiteplan::create');
+$routes->get('/dashboardbackgroundsiteplan/edit/(:segment)', 'Dashboardbackgroundsiteplan::edit/$1');
+$routes->delete('/dashboardbackgroundsiteplan/(:num)', 'Dashboardbackgroundsiteplan::delete/$1');
+
+
 
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';

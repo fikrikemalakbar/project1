@@ -6,6 +6,81 @@ html,body{
   margin: 0;
   padding:0;
 }
+
+
+.captionHeader {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  overflow-y: hidden;
+}
+.headerMain{
+    /* position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center; */
+  background-color: rgba(255, 255, 255, 0.6);
+  min-height:100vh;
+}
+.titleheader{
+  padding-top:300px;  
+}
+
+.truehaderimg{
+  display: flex;
+  justify-content: center;
+  
+}
+.truehaderimg img{
+  width:100px;
+  height:100px;
+  border-radius: 50%;
+}
+.mengapaheader{
+  display:flex;
+  justify-content: center;
+}
+
+.headerButton{
+  position: absolute;
+  left: 0;
+  top: 99%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  overflow-y: hidden!important;
+  background-color:#0F3C7C;
+  padding-top:10px;
+}
+.headerbuttonava{
+  color:#F8CD96;
+  font-weight: 700;
+  font-size: 18px;
+  padding-top: 10px;
+  text-align: justify;
+}
+.btnLight{
+    background-color: white;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
 .btnEmail{
   background-color: rgb(55, 158, 199);
   border: none;
@@ -28,8 +103,20 @@ html,body{
   cursor: pointer;
   width:100%;
 }
+.btnkenapa{
+  background-color:  rgb(66,100,149);
+  color: white;
+ line-height: 3;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  max-width:100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+}
 .btnPhone{
- 
   background-color:  rgb(66,100,149);
   color: white;
  line-height: 3;
@@ -685,12 +772,13 @@ img.hovermarketing-shadowmarketing {
 }
 /* end modal marketing */
 main {
-    margin-top:100px;
+    margin-top:120px;
 
 }
 
 .whyChoice {
     background-color: rgb(238, 234, 234);
+    padding-top: 20px;
 }
 
 .titleWC {
@@ -718,7 +806,6 @@ main {
     font-size: 15px;
 }
 
-
 .floorOne {
   /* background-color: rgba(21, 3, 49, 0.5); */
   background-color: rgba(66, 100, 149, 0.8);
@@ -741,6 +828,8 @@ main {
   text-align: center;
   font-weight: 700;
   font-size: 22px;
+  color:white;
+  padding-top:20px;
 }
 .sitedesktop{
   display:block;
@@ -781,75 +870,46 @@ margin: auto;
 }
 .footer{
   background-color: black;
+  padding-top:50px;
 }
 .footertitle{
   color:white;
   display: flex;
   justify-content: center;
+  font-size:22px;
 }
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
+.footer-bottom{
+  color:white;
+  display:flex;
+  justify-content: center;
+  font-size:15px;
+  font-weight:300;
+  padding-bottom:30px;
 }     
+.contactperson{
+  max-width:100%;
+  position: fixed;
+  right: 10px;
+  bottom: 30px;
+  z-index: 999;
+}
+.bitzarzo{
+  display: flex;
+  justify-content: center;
+  padding-right:20px;
+  padding-left:20px;
+  line-height: 3;
+  align-items: center;
+  margin: 0 auto;
+  max-width:100%;
+}
+.bitzarzo i{
+  margin-right: auto;
+  padding-right:10px;
+}
+.bordeuxo{
+margin: auto;
+}
 @media only screen and (max-width: 600px) {
   .sitedesktop{
     display:none;
@@ -2001,5 +2061,80 @@ img.hoversitemobile-shadowsitemobile {
 
   .row .col.push-xl12 {
     left: 100%
+  }
+}
+
+
+
+/* Slider styles */
+.slider-wrapper {
+  position: relative;
+}
+.slider-wrapper nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  pointer-events: none;
+}
+.slider-wrapper nav div {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: black;
+  font-size: 21px;
+  box-shadow: 0 0 6px 1px rgba(0,0,0, .3);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.1s ease-out;
+  pointer-events: all;
+}
+.slider-wrapper nav div:hover {
+  background-color: #444;
+}
+.slider-wrapper nav div.disabled {
+  opacity: 0;
+  pointer-events: none;
+}
+.slider {
+  width: 100%;
+  overflow-x: scroll;
+}
+.slider .wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+.slider  .slide {
+  width: 360px; /* a default width */
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* this should be removed it's just for the demo */
+.slider .slide img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .slider  .slide {
+    width: 50vw; /* a default width */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .slider-wrapper {
+    overflow: hidden;
+    width: 100%;
+  }
+  .slider {
+    position: relative;
+    bottom: -18px;
   }
 }
